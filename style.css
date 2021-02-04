@@ -1,5 +1,5 @@
 @font-face
-{font-family:raleway;
+{font-family:raleway, sans-serif;
 src: url(C:\Users\shado\OneDrive\Bureau\NathalieDesvars_2_01022021\DESVARS_2_01022021); 
 }
 
@@ -36,10 +36,12 @@ a
  list-style-type: none; 
 }
 
-h1
+h3
 {
-    display: inline;   
+    display: inline; 
+  
 }
+
 #rechercher
 {
     border-radius: 20px;
@@ -47,3 +49,49 @@ h1
     background-color:blue;
 
     }
+    /* revoir les bordures*/
+    .containerfiltres
+    {
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+    }
+    /* footer et flexbox*/
+    h4
+    {
+    
+      text-align :center
+    }
+    
+    ul li
+    {
+             list-style-type: none; 
+             margin-left: 0%; 
+             padding-left: 0%;
+    }
+    .end
+    {
+        display: flex;
+        align-content: flex-end;  
+        justify-content: space-between;   
+    }
+    /* 2e partie image flottante*/
+    .aubergelacan
+    {
+        float: left;    
+    }
+    .Hebmars p
+    {
+        display: inline-block;
+        box-shadow: 3px;
+        border: 3px white solid;
+        width: 150px;
+        border-radius: 15px;
+        background-color: white;
+
+        }
+        .photos
+        {
+            background-color:#DCDCDC;
+
+        }
