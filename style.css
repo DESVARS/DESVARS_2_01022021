@@ -46,7 +46,10 @@ h3
 {
     border-radius: 20px;
     color: cornsilk;
-    background-color:blue;
+    background-color:#0065FC; 
+    width: 15%;
+    height: 30%;
+
 
     }
     /* revoir les bordures*/
@@ -76,22 +79,88 @@ h3
         justify-content: space-between;   
     }
     /* 2e partie image flottante*/
-    .aubergelacan
-    {
-        float: left;    
-    }
+
+    
     .Hebmars p
     {
-        display: inline-block;
-        box-shadow: 3px;
-        border: 3px white solid;
-        width: 150px;
-        border-radius: 15px;
+       
+        box-sizing: border-box;
+        box-shadow: 6px;
+        border: 7px white solid;
+        border-radius: 20px;
         background-color: white;
+        margin-left: 0px;
+        box-shadow: 3px 3px 3px slategrey;
 
         }
-        .photos
-        {
-            background-color:#DCDCDC;
+       .Hebmars 
+       {
+           display: flex;
+           flex-direction: row;         
+           background-color:#F2F2F2;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-left: 0px;
+        border-radius: 10px;
+        width: 700px;
 
+        box-shadow: 3px 3px 3px white;
+    }
+    .photos
+    {
+        display: flex; 
+          flex-direction: row;
+            justify-content: space-around;
+            border: spacing 30px; 
+            
+            
+    
+    }
+    .populaires
+    {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+        margin-right: 2px;
+        background-color:#F2F2F2;
+        border-spacing: 30px;
+        border-radius: 10px;
+        width: 280px;
+        text-align: justify;
+      
+    }
+    .populaires p 
+    {
+        box-sizing: border-box;
+        box-shadow: 3px 3px 3px slategrey;
+        border: 3px white solid;
+        border-radius: 20px;
         }
+        
+       
+    .soleil
+    {
+        float: left;
+
+    }
+    .coeur
+    {
+        float: left;
+    }
+    .bleublanc
+   {
+       float: left;
+   }
+   /* dernière partie activités flex*/
+   
+      
+   
+
+  .vieuxport
+  {
+     
+      border-top-left-radius: 15px;
+
+
+      }
