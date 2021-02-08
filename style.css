@@ -48,8 +48,7 @@ h3
     color: cornsilk;
     background-color:#0065FC; 
     width: 15%;
-    height: 30%;
-
+    height: 40%;  
 
     }
     /* revoir les bordures*/
@@ -59,12 +58,7 @@ h3
         flex-direction: row;
         box-sizing: border-box;
     }
-    /* footer et flexbox*/
-    h4
-    {
-    
-      text-align :center
-    }
+  
     
     ul li
     {
@@ -80,87 +74,234 @@ h3
     }
     /* 2e partie image flottante*/
 
-    
-    .Hebmars p
-    {
-       
-        box-sizing: border-box;
-        box-shadow: 6px;
-        border: 7px white solid;
-        border-radius: 20px;
-        background-color: white;
-        margin-left: 0px;
-        box-shadow: 3px 3px 3px slategrey;
-
-        }
        .Hebmars 
        {
-           display: flex;
-           flex-direction: row;         
-           background-color:#F2F2F2;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-end;
-        margin-left: 0px;
-        border-radius: 10px;
-        width: 700px;
+           display: grid;
+            grid-template-columns: 1fr 1fr 1fr; 
+            grid-template-rows: 40px 120px 120px;       
+            background-color:#F2F2F2;
+            border-radius: 15px;
+            text-align:justify;
+            grid-column-gap: 3rem;
+            grid-row-gap: 2rem;
+            width: 65%;
+           
+             
+             
 
-        box-shadow: 3px 3px 3px white;
+           
+                      
     }
-    .photos
+ 
+    .canebière
     {
-        display: flex; 
-          flex-direction: row;
-            justify-content: space-around;
-            border: spacing 30px; 
-            
-            
-    
+      
+        box-shadow: 3px 3px 3px slategrey;
+        border: 1px white solid;
+        border-radius: 20px;
+        grid-row-start: 2;
+        
+      
+  
+
     }
+    .port
+    {
+       
+        box-shadow: 3px 3px 3px slategrey;
+        border: 3px white solid;
+        border-radius: 20px;
+        grid-row: 2;
+    }
+    .mouette
+    {
+      
+        box-shadow: 3px 3px 3px slategrey;
+        border: 3px white solid;
+        border-radius: 20px;
+        grid-row: 2;
+        grid-column: 3;
+    }
+    .mer
+    {
+
+        box-shadow: 3px 3px 3px slategrey;
+        border: 3px white solid;
+        border-radius: 20px;
+        grid-row: 3;
+
+        }
+    .panier
+    {
+       
+        box-shadow: 3px 3px 3px slategrey;
+        border: 3px white solid;
+        border-radius: 20px;
+        grid-row: 3;
+        grid-column: 2;
+    }
+    .amina
+    {
+       
+        box-shadow: 3px 3px 3px slategrey;
+        border: 3px white solid;
+        border-radius: 20px;
+        grid-row: 3;
+        grid-column-end: 4;
+    }
+.photos
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-spacing: 20px;
+    height: 300px;
+}
+    
     .populaires
     {
         display: flex;
         flex-direction: column;
-        align-content: flex-end;
-        margin-right: 2px;
-        background-color:#F2F2F2;
         border-spacing: 30px;
         border-radius: 10px;
-        width: 280px;
-        text-align: justify;
+        width: 30%;
+        height: 400px;
+        background-color:#F2F2F2; 
+        align-items: stretch;
+        grid-row-gap: 0,5rem;
       
     }
-    .populaires p 
+    .soleil 
     {
-        box-sizing: border-box;
+    
         box-shadow: 3px 3px 3px slategrey;
         border: 3px white solid;
         border-radius: 20px;
+    
         }
+        .soleil img
+        {
+            float: left;
+            border-left: 15px;
+        }
+      .coeur  
+      {
         
+        box-shadow: 3px 3px 3px slategrey;
+        border: 3px white solid;
+        border-radius: 20px; 
+        }
+        .coeur img
+        {
+            float: left;
+            border-left: 15px;
+        }
+       .bleu
+       {
+
+        
+            box-shadow: 3px 3px 3px slategrey;
+            border: 3px white solid;
+            border-radius: 20px;
+            float: left;
+       }
+       .bleu img
+       {
+           float: left;
+           border-left: 15px;
+       }
        
-    .soleil
-    {
-        float: left;
-
-    }
-    .coeur
-    {
-        float: left;
-    }
-    .bleublanc
+   /* dernière partie activités flex GRID*/
+   
+   .activités 
    {
-       float: left;
-   }
-   /* dernière partie activités flex*/
-   
-      
-   
+       display:grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+       grid-template-rows: 170px 170px;
+       row-gap: 15px;
+        column-gap: 20px;
+        background-color:#F2F2F2; 
+        height: 300px;
+        width: 100%;
+        grid-row: 2;
+    
 
+        }
+         
+     
+   
+.activités img
+{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    row-gap: 15px;
+}
   .vieuxport
   {
      
-      border-top-left-radius: 15px;
-
-
+      grid-column-start: 1;
+      grid-row: span 2;
+      grid-row-start: 1;
+      
+      border-radius: 20px;     
       }
+.calanques
+{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    grid-column-start: 3;
+    grid-row-start: 1;  
+    border-radius: 20px;   
+}
+.frioul
+{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    grid-column-start: 2;
+    border-radius: 20px; 
+    grid-row: 2;  
+}
+.pomegues
+{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-radius: 20px;
+    grid-column: 2;
+    grid-row: 1;   
+}
+.dame
+{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    border-radius: 20px;    
+}
+.longchamps
+{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    grid-column-start: 4;
+    grid-row-start: 2;
+    border-radius: 20px;
+}
+.photos
+{
+    grid-row: 1;
+    grid-row-gap: 5rem;
+}
+.container
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  1fr 1fr;
+    grid-row-gap: 5rem;
+}
+
+
+
+/* footer liste*/
+.end
+{
+    background-color: #C0C0C0;
+}
