@@ -1,6 +1,6 @@
 @font-face
 {font-family:raleway, sans-serif;
-src: url(C:\Users\shado\OneDrive\Bureau\NathalieDesvars_2_01022021\DESVARS_2_01022021); 
+src: url(raleway\raleway); 
 }
 
 header
@@ -35,74 +35,193 @@ a
  align-items: center; 
  list-style-type: none; 
 }
-
-h3
+ul li
 {
-    display: inline; 
-  
+         list-style-type: none; 
+         margin-left: 0%; 
+         padding-left: 0%;
 }
 
+h1
+{
+    font-size: 20px;
+}
+#ville
+{
+    height: 2.3em;
+    border: lightgrey;
+    box-shadow: lightslategray;
+}
 #rechercher
 {
-    border-radius: 20px;
-    color: cornsilk;
-    background-color:#0065FC; 
-    width: 15%;
-    height: 40%;  
-
+    cursor: pointer;
+    border: 10px solid #0065FC;
+    background: #0065FC;
+    color: #ffffff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 2.7em;
     }
-    /* revoir les bordures*/
+  /* Partie filtres flex-----------------*/
+
     .containerfiltres
     {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 5px;
+        padding: 0 10px 10px 0;
+        width: 60%;
+        height: 10%;
+        align-items: center;
+        justify-items: center;
+
+  }
+     .filtres h2
+     {
+         font-size: 20px;
+     }
+    #économique
+      {
         display: flex;
         flex-direction: row;
-        box-sizing: border-box;
+        box-shadow:  2px solid #0065FC;
+        font-size: 10px;
+        text-transform: capitalize;
+        background-color: #F2F2F2; 
+         height: 35px;  
+         border:2px solid #F2F2F2;
+         border-radius: 20px;
+         align-content: space-between;
+         align-items: center;
+    }
+   
+    #économique i
+    {
+        box-shadow:  2px solid #0065FC;
+        background-color:#DEEBFF ;
+        border: 25px ;
+        padding: 15px;
+        margin-right: 10px ;
+        border-radius: 30px;
+    }
+      #familial
+      {
+        display: flex;
+        flex-direction: row;
+        font-size: 10px;
+        text-transform: capitalize;
+        background-color: #F2F2F2; 
+         height: 35px;  
+         border:2px solid #F2F2F2;
+         border-radius: 20px;
+         align-content: space-between;
+         align-items: center;
+      }
+      
+      #familial i
+      {
+       background-color:#DEEBFF ;
+        border: 25px ;
+        padding: 15px;
+        margin-right: 10px ;
+        border-radius: 30px;
+    } 
+      #romantique
+      {  
+        display: flex;
+        flex-direction: row;
+        font-size: 10px;
+         text-transform: capitalize;
+         align-items: center;
+         align-content: space-between;
+         background-color: #F2F2F2; 
+         height: 35px;  
+         border:2px solid #F2F2F2;
+         border-radius: 20px;
+         
+
+         }
+    #romantique i
+    {
+        background-color:#DEEBFF ;
+        border: 25px ;
+         padding: 15px;
+        margin-right: 10px ;
+        border-radius: 30px;
+    }
+    
+      #animaux
+      {
+        display: flex;
+        flex-direction: row;
+        font-size: 10px;
+        text-transform: capitalize;
+        text-align:justify;
+        background-color: #F2F2F2; 
+         height: 35px;  
+         border:2px solid #F2F2F2;
+         border-radius: 20px;
+         align-items: center;
+         align-content: space-between;
     }
   
+   #animaux i
+   {
+    background-color:#DEEBFF ;
+    border: 25px ;
+     padding: 15px;
+    margin-right: 10px ;
+    border-radius: 30px;
+   }
     
-    ul li
-    {
-             list-style-type: none; 
-             margin-left: 0%; 
-             padding-left: 0%;
-    }
-    .end
-    {
-        display: flex;
-        align-content: flex-end;  
-        justify-content: space-between;   
-    }
-    /* 2e partie image flottante*/
+    
+    /* 1ere  section partie image flottante*-------------*/
 
        .Hebmars 
        {
            display: grid;
             grid-template-columns: 1fr 1fr 1fr; 
-            grid-template-rows: 40px 120px 120px;       
-            background-color:#F2F2F2;
-            border-radius: 15px;
-            text-align:justify;
-            grid-column-gap: 3rem;
-            grid-row-gap: 2rem;
-            width: 65%;
-           
-             
-             
-
-           
-                      
+            grid-template-rows: 40px 120px 120px 40px;       
+            background-color: #F2F2F2;
+            justify-content: space-around;
+            grid-column-gap: 4rem;
+            grid-row-gap: 3rem;
+            width: 70%;
+            height: 530px;
+            row-gap: 60px;
+            column-gap: 40px;
+            border-radius: 20px;   
+            padding-left: 10px;                
     }
- 
+    .Hebmars img
+    {
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 230px;
+  
+    
+    }
+    a  :hover
+    {
+      text-decoration: none;
+    }
     .canebière
     {
-      
         box-shadow: 3px 3px 3px slategrey;
-        border: 1px white solid;
+        border: 2px white solid;
         border-radius: 20px;
-        grid-row-start: 2;
-        
-      
-  
+        grid-row-start: 2;  
+        padding: 1px 10px; 
+        box-shadow: 2px slategrey;
+        width: 230px;
+        height: 160px;
+        font-size: 15px;
+        background-color: white;
+        cursor: pointer;
+
+
 
     }
     .port
@@ -110,79 +229,136 @@ h3
        
         box-shadow: 3px 3px 3px slategrey;
         border: 3px white solid;
-        border-radius: 20px;
+         border-radius: 20px;
         grid-row: 2;
-    }
+         padding: 1px 10px; 
+        width: 230px;
+        height: 160px;
+        font-size: 15px;
+        background-color: white;
+        
+
+    } 
     .mouette
     {
-      
         box-shadow: 3px 3px 3px slategrey;
         border: 3px white solid;
         border-radius: 20px;
         grid-row: 2;
         grid-column: 3;
+        padding: 1px 10px; 
+        width: 230px;
+        height: 160px;
+        font-size: 15px;
+        background-color: white;
     }
     .mer
     {
-
         box-shadow: 3px 3px 3px slategrey;
         border: 3px white solid;
         border-radius: 20px;
         grid-row: 3;
-
+        padding: 1px 10px; 
+        width: 230px;
+        height: 160px;
+        font-size: 15px;
+        background-color: white;
         }
     .panier
     {
-       
         box-shadow: 3px 3px 3px slategrey;
         border: 3px white solid;
         border-radius: 20px;
         grid-row: 3;
         grid-column: 2;
+        padding: 1px 10px; 
+        width: 230px;
+        height: 160px;
+        font-size: 15px;
+        background-color: white;
+      
     }
     .amina
     {
-       
         box-shadow: 3px 3px 3px slategrey;
         border: 3px white solid;
         border-radius: 20px;
         grid-row: 3;
         grid-column-end: 4;
+        padding: 1px 10px; 
+         width: 230px;
+        height: 160px;
+        font-size: 15px;
+        background-color: white;
+    }
+    h4
+    {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .img
+    {
+        object-fit:cover;
     }
 .photos
 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border-spacing: 20px;
-    height: 300px;
+    height: 400px;
+    width: 100%;
 }
-    
+   /* aside--------------------*/
+
     .populaires
     {
         display: flex;
         flex-direction: column;
         border-spacing: 30px;
         border-radius: 10px;
-        width: 30%;
-        height: 400px;
-        background-color:#F2F2F2; 
+        width: 25%;
+        height: 530px;
         align-items: stretch;
-        grid-row-gap: 0,5rem;
+        grid-row-gap: 2rem;
+        background-color:#F2F2F2 ;
+        padding-left: 5px;
+        padding-right: 5px;
+        
       
     }
+    .populaires i
+    {
+     
+        background-color: white;
+
+    }
+   #populaires
+   {
+       display: flex;
+       flex-direction: row;
+        align-items: center;
+      justify-content: space-between;
+      padding: 0 10px 10 px 0;
+        }
+    
     .soleil 
     {
     
         box-shadow: 3px 3px 3px slategrey;
         border: 3px white solid;
         border-radius: 20px;
-    
+        padding-left: 10px;
+        padding-top: 5px;
         }
         .soleil img
         {
             float: left;
             border-left: 15px;
+            object-fit:cover;
+        }
+        .soleil i
+        {
+            padding-top: 50px;
         }
       .coeur  
       {
@@ -190,11 +366,18 @@ h3
         box-shadow: 3px 3px 3px slategrey;
         border: 3px white solid;
         border-radius: 20px; 
+        padding-left: 10px;
         }
         .coeur img
         {
             float: left;
             border-left: 15px;
+            object-fit:cover;
+            margin-top: 10px;
+        }
+        .coeur i
+        {
+            padding-top: 40px;
         }
        .bleu
        {
@@ -203,55 +386,73 @@ h3
             box-shadow: 3px 3px 3px slategrey;
             border: 3px white solid;
             border-radius: 20px;
-            float: left;
+            padding-left: 10px;
        }
        .bleu img
        {
            float: left;
            border-left: 15px;
+           object-fit:cover;
+    
+       }
+       .bleu i
+       {
+           padding-top: 50px;
        }
        
-   /* dernière partie activités flex GRID*/
+   /* 2e partie  section activités flex GRID---------*/
    
    .activités 
    {
        display:grid;
        grid-template-columns: 1fr 1fr 1fr 1fr;
-       grid-template-rows: 170px 170px;
+       grid-template-rows:  20px 170px 170px;
        row-gap: 15px;
         column-gap: 20px;
-        background-color:#F2F2F2; 
-        height: 300px;
+        height: 400px;
         width: 100%;
         grid-row: 2;
-    
-
-        }
+        grid-row-gap: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-inline-end: 0rem;
+        
+      
+     }
          
-     
-   
+   .titres  
+   {
+       grid-row: 1;
+       grid-row-gap: 2rem;
+      
+   }
 .activités img
 {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     row-gap: 15px;
+    grid-row-gap: 2rem;
+    object-fit: cover;
 }
   .vieuxport
   {
      
       grid-column-start: 1;
       grid-row: span 2;
-      grid-row-start: 1;
-      
-      border-radius: 20px;     
+      grid-row-start: 2;
+      grid-row-gap: 2rem;
+      border-radius: 20px;
+    
+         
       }
 .calanques
 {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     grid-column-start: 3;
-    grid-row-start: 1;  
-    border-radius: 20px;   
+    grid-row-start: 2;  
+    border-radius: 20px;  
+   
 }
 .frioul
 {
@@ -259,7 +460,7 @@ h3
     border-top-right-radius: 15px;
     grid-column-start: 2;
     border-radius: 20px; 
-    grid-row: 2;  
+    grid-row: 3;  
 }
 .pomegues
 {
@@ -267,14 +468,15 @@ h3
     border-top-right-radius: 15px;
     border-radius: 20px;
     grid-column: 2;
-    grid-row: 1;   
+    grid-row: 2; 
+    
 }
 .dame
 {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     grid-column-start: 4;
-    grid-row-start: 1;
+    grid-row-start: 2;
     border-radius: 20px;    
 }
 .longchamps
@@ -282,26 +484,35 @@ h3
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     grid-column-start: 4;
-    grid-row-start: 2;
+    grid-row-start: 3;
     border-radius: 20px;
 }
 .photos
 {
-    grid-row: 1;
-    grid-row-gap: 5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 2rem;
 }
 .container
 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:  1fr 1fr;
-    grid-row-gap: 5rem;
+    grid-row-gap: 3rem;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    height: 1000px;
 }
 
 
 
-/* footer liste*/
+/* footer liste-------------------------------*/
 .end
 {
-    background-color: #C0C0C0;
-}
+    display: flex;
+    justify-content:flex-start;
+    background-color: #F2F2F2;
+    width: 100%;  
+    grid-gap: 200px;
+   
+
+} 
