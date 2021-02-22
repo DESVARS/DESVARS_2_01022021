@@ -4,62 +4,59 @@ src: url(raleway\raleway);
 }
 body
 {
-    margin: 5px 3px 3px 5px;
+    margin: 3px 3px 5px 3px;
+
 }
 header
 {
-    margin: 0;
-    padding: 0;
+    
+    padding-top: 20px;
     box-sizing: border-box;
 }
-header .navbar a:hover
-{
-    border-top: 2px solid blue;
-}
-a
-{
-    text-decoration: none;
-    padding: 12px;
-    background-color: white;
-    color:#0065FC;
-       
-}
-a:hover
-{
-    color: black;
-    font-weight: bold;
-}
+
+
+
 .logo
 {
-    height :50px;
-    width: 80px;
+   padding-top:10px;
+    height :40px;
+    width: 70px;
 }
-
-
 .navbar
 {
-   display: flex;
-   justify-content: space-between;
-   padding: 16 px;
-  
+    display: flex;
+    justify-content: space-between;
+}
+.navbar a
+ {
+   
+    padding: 12px;
+    color: #0065FC;
+    cursor: pointer;
+    text-decoration: none;       
+
 }
 .navbar ul
 {
- display: flex; 
- align-items: center; 
- list-style-type: none; 
+    display: flex;
+    align-items: center;
+   
 }
-ul li
+.navbar li
 {
-         list-style-type: none; 
-         margin-left: 0%; 
-         padding-left: 0%;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    list-style-type: none;  
+}
+.navbar ul li a:hover
+{
+    border-top: 2px solid #0065FC;
+
 }
 
-h1
-{
-    font-size: 20px;
-}
+
+
 
 #rechercher
 {
@@ -77,6 +74,8 @@ h1
  .search
 {
     display: flex;
+  
+   
 
 }
 
@@ -88,13 +87,32 @@ h1
          border: 2px solid #F2F2F2;
          padding: 10px 10px;
          background-color: #F2F2F2;
+      
 
  }
 #ville
 {
     padding: 7px 8px;
+    font-weight: bold;
+    font-size: 15px;
+  
+}
+.titres1
+{
+    display: block;
+    line-height: 8px;
    
 }
+.titres h1
+{
+    font-size: 27px;
+    padding-left: 5px;
+
+}
+    
+   
+    
+
   /* Partie filtres flex-----------------*/
 
   .containerfiltres
@@ -227,7 +245,7 @@ h1
       align-items: center;
   }
     
-    /* 1ere  section partie image flottante*-------------*/
+    /* 1ere  section partie hébergement*-------------*/
 
        .Hebmars 
        {
@@ -236,12 +254,12 @@ h1
             grid-template-rows: 40px 120px 120px 40px;       
             background-color: #F2F2F2;
             justify-content: space-around;
-            grid-column-gap: 4rem;
+            grid-column-gap: 5px;
             grid-row-gap: 5px;
             width: 70%;
             height: 530px;
             row-gap: 60px;
-            column-gap: 40px;
+            column-gap: 15px;
             border-radius: 20px;   
             padding-left: 10px; 
                        
@@ -252,19 +270,21 @@ h1
         object-fit: cover;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        width: 180px;
+        width: 220px;
         height: 90px;
+        margin-top: 10px;
+   
     
-    }
-    a  :hover
-    {
-      text-decoration: none;
-    }
-    .i
-    {
-        color: #0065FC;
-    }
 
+        }
+    
+     .Hebmars a:hover
+
+    {
+     cursor: pointer;
+    }
+    
+    
     .canebière
     {
         box-shadow: 3px 3px 3px slategrey;
@@ -273,12 +293,26 @@ h1
         grid-row-start: 2;
         grid-column: 1;   
         box-shadow: 1px slategrey;
-        width: 230px;
-        height: 135px;
+        width: 210px;
+        height: 155px;
         font-size: 15px;
         cursor: pointer;
+        text-decoration: none;
+        list-style-type: none;
+        padding-left: 10px;
+        padding-right:  10px;    
+      
     }
+.iblue
+{
+    color: #0065FC;
    
+}
+.igrey
+{
+    color: #F2F2F2;
+   
+}
     .port
     {
         box-shadow: 3px 3px 3px slategrey;
@@ -288,13 +322,18 @@ h1
         grid-column: 2; 
         padding: 1px 10px; 
         box-shadow: 2px slategrey;
-        width: 230px;
-        height: 160px;
+        width: 210px;
+        height: 155px;
         font-size: 15px;
         background-color: white;
         cursor: pointer;
-        
-    } 
+        text-decoration: none;
+        list-style-type: none;
+        padding-left: 10px;
+        padding-right:  10px;    
+   
+
+   }
     .mouette
     {
         box-shadow: 3px 3px 3px slategrey;
@@ -304,14 +343,17 @@ h1
         grid-column: 3; 
         padding: 1px 10px; 
         box-shadow: 2px slategrey;
-        width: 230px;
-        height: 160px;
+        width: 210px;
+        height: 155px;
         font-size: 15px;
         background-color: white;
         cursor: pointer;
-        
-
+        text-decoration: none;
+        list-style-type: none;
+        padding-left: 10px;
+        padding-right:  10px;
         }
+        
     .mer
     { 
         box-shadow: 3px 3px 3px slategrey;
@@ -321,15 +363,17 @@ h1
         grid-column: 1; 
         padding: 1px 10px; 
         box-shadow: 2px slategrey;
-        width: 230px;
-        height: 160px;
+        width: 210px;
+        height: 155px;
         font-size: 15px;
         background-color: white;
         cursor: pointer;
-        
-        
+        text-decoration: none;
+        list-style-type: none;
+        padding-left: 10px;
+        padding-right:  10px;
         }
-    .panier
+.panier
     {
         
         box-shadow: 3px 3px 3px slategrey;
@@ -339,12 +383,17 @@ h1
         grid-column: 2;
         padding: 1px 10px; 
         box-shadow: 2px slategrey;
-        width: 230px;
-        height: 160px;
+        width: 210px;
+        height: 155px;
         font-size: 15px;
         background-color: white;
         cursor: pointer;
+        text-decoration: none;
+        list-style-type: none;
+        padding-left: 10px;
+        padding-right:  10px;
     }
+   
     .amina
     {
         box-shadow: 3px 3px 3px slategrey;
@@ -354,16 +403,22 @@ h1
         grid-column: 3;
         padding: 1px 10px; 
         box-shadow: 2px slategrey;
-        width: 230px;
-        height: 160px;
+        width: 210px;
+        height: 155px;
         font-size: 15px;
         background-color: white;
         cursor: pointer;
+        text-decoration: none;
+        list-style-type: none;
+        padding-left: 10px;
+        padding-right:  10px;
     }
+   
     h4
     {
         grid-column: 1;
         grid-row: 4;
+       
         
     }
     .photos
@@ -384,97 +439,102 @@ h1
         flex-direction: column;
         border-spacing: 30px;
         border-radius: 10px;
-        width: 25%;
+        width: 290px;
         height: 530px;
         align-items: stretch;
         grid-row-gap: 2rem;
-        background-color:#F2F2F2 ;
+        background-color: #F2F2F2;
         padding-left: 5px;
         padding-right: 5px;
-        margin-left: 15px;
-        
-      
+        margin-left: 15px;    
     }
-    .populaires i
+    .starb
     {
-     
-    
-        color:#0065FC ;
-
+        color:#0065FC;
     }
+    .starg
+    {
+        color: #F2F2F2;
+    }     
     
    #populaires
    {
        display: flex;
        flex-direction: row;
-        align-items: center;
-      justify-content: space-between;
-      padding: 0 10px 10 px 0;
+       align-items: center;
+       justify-content: space-between;
+     
         }
-    
+  
     .soleil 
     {
-    
-        box-shadow: 3px 3px 3px slategrey;
-        border: 3px white solid;
-        border-radius: 20px;
-        padding-left: 10px;
-        padding-top: 5px;
-        }
+    box-shadow: 3px 3px 3px slategrey;
+    border: 3px white solid;
+    border-radius: 20px;
+    padding-left: 0px;
+    padding-top: 2px;  
+    height: 100px;
+    width: 260px;
+    margin-bottom: 10px;
+   
+  
+    }
      .soleil img
         {
             float: left;
-            border-left: 15px;
             object-fit:cover;
             height: 100px;
             width: 130px; 
+            border-radius: 20px;           
         }
-        .soleil i
-        {
-            padding-top: 50px;
-        }
+       
       .coeur  
       {
-        
         box-shadow: 3px 3px 3px slategrey;
         border: 3px white solid;
         border-radius: 20px; 
-        padding-left: 10px;
+        height: 100px;
+        width: 260px;
+        margin-top: 60px;
+         padding: 2px 10px 0px 2px;
+        
         }
+        
         .coeur img
         {
             float: left;
-            border-left: 15px;
             object-fit:cover;
             height: 100px;
-            width: 130px;   
+            width: 130px;  
+            border-radius: 20px; 
+            margin-left: 0px;
+              
         }
-        .coeur i
-        {
-            padding-top: 40px;
-        }
+        
        .bleu
        {
-
-        
-            box-shadow: 3px 3px 3px slategrey;
-            border: 3px white solid;
-            border-radius: 20px;
-            padding-left: 10px;
-       }
+        box-shadow: 3px 3px 3px slategrey;
+        border: 3px white solid;
+        border-radius: 20px;
+        height: 100px;
+        width:260px;
+        margin-top: 60px;
+        padding: 2px 10px 0px 2px;  
+      
+    }
+            
       .bleu img
       {
         float: left;
-        border-left: 15px;
         object-fit:cover;
         height: 100px;
-        width: 130px; 
-      }
-       .bleu i
-       {
-           padding-top: 50px;
-       }
+        width: 130px;
+        border-radius: 20px;
        
+      
+    }
+   
+      
    /* 2e partie  section activités flex GRID---------*/
    
    .activités 
@@ -630,10 +690,16 @@ display: flex;
 align-content: flex-start;
 padding: 10px -10px 10px 10px;
 justify-content: space-between;
-width: 80%;
-margin-top: 200px;
+padding-right: 320px;
+padding-left: 0px;
+margin-top: 250px;
+background-color:#F2F2F2 ;
 
-
+}
+.footer h4
+{
+    font-weight: bold;
+    line-height: 2px;
 }
 #footer1
 {
