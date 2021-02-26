@@ -2,707 +2,522 @@
 {font-family:raleway, sans-serif;
 src: url(raleway\raleway); 
 }
-body
-{
-    margin: 3px 3px 5px 3px;
 
+.pagereservia
+{
+   
+    margin: auto;
 }
-header
+.main
 {
-    
-    padding-top: 20px;
-    box-sizing: border-box;
+    display:flex;
+    justify-content: space-between;
 }
-
-
-
-.logo
+.logo img
 {
-   padding-top:10px;
-    height :40px;
     width: 70px;
+    height: 40px;
 }
 .navbar
 {
     display: flex;
-    justify-content: space-between;
+    justify-content:row reverse;
 }
-.navbar a
+.navbar a:visited
  {
-   
-    padding: 12px;
+    background-color: black;
     color: #0065FC;
     cursor: pointer;
     text-decoration: none;       
-
 }
 .navbar ul
 {
     display: flex;
-    align-items: center;
-   
+    list-style-type: none;
 }
+
 .navbar li
 {
-    text-align: right;
-    padding: 10px;
-    margin-bottom: 20px;
-    list-style-type: none;  
-}
-.navbar ul li a:hover
-{
-    border-top: 2px solid #0065FC;
-
-}
-
-
-
-
-#rechercher
-{
-    cursor: pointer;
-    border: 10px solid #0065FC;
-    background: #0065FC;
-    color: #ffffff;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    height: 2.7em;
-    padding-left: 0px;
-    
-  
-    }
- .search
-{
-    display: flex;
-  
-   
-
-}
-
-.search i{
-        padding-top: 10px;
-         padding-right: 5px;
-         border-radius: 20px;
-         align-items: center;
-         border: 2px solid #F2F2F2;
-         padding: 10px 10px;
-         background-color: #F2F2F2;
-      
-
- }
-#ville
-{
-    padding: 7px 8px;
-    font-weight: bold;
-    font-size: 15px;
-  
+    margin-right: 15px;
+    list-style-type: none;    
 }
 .titres1
 {
-    display: block;
-    line-height: 8px;
-   
+    display: flex;
+    flex-direction: column;
 }
-.titres h1
+h1
 {
-    font-size: 27px;
-    padding-left: 5px;
-
+    font-size: 20px;
+    margin-bottom: 0px;
 }
-    
-   
-    
+h2
+{
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.search
+{
+    display:flex;
+    margin-bottom: 10px;
+    margin-top: 20px;    
+}
+
+
 
   /* Partie filtres flex-----------------*/
+.containerfiltres
+{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-right: 500px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
 
-  .containerfiltres
-    {
-        display: grid;
-        grid-template-columns: 1f 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        margin-top: 20px;
-        width: 800px;
-        height: 70px;
-        justify-content: space-around;
-        gap: 10Px;
-
-
-     }
-     .containerfiltres h2
-     {
-         font-size: 20px;
-        text-transform: capitalize;
-        text-align: center;
-        justify-content: center;
-        margin-top: auto;
-        margin-bottom: auto;
-        padding-top: 5px;
-   
-      
-      
-       
-       
-     }
-     
-     .containerfiltres i
-     {
-
-         border-radius: 20px;
-         color:#0065FC ;
-         align-items: center;
-         border: 2px solid #DEEBFF;
-         padding: 10px 10px;
-         background-color: #DEEBFF ;
-         margin-top: auto;
-         margin-bottom: auto;
-        
-     }
-     
-     .filtres
-     {
-
-        display: flex;
-        height: 35px; 
-        border-radius: 20px;
-        justify-items: start;
-        justify-content:start;
-        margin-top: 15px;
-      
-        
-    }
-    .economique
-      {
-        display: flex;
-        flex-direction: row;
-        border: 2px solid#DEEBFF ; 
-        height: 35px; 
-        width: 120px; 
-        border-radius: 20px;
-        padding-right: 50px;
-        justify-content: start;
-        justify-items: start;
-        gap: 3px;
-        margin-top: auto;
-        margin-bottom: auto;      
-      
-    }
-   
-    
-      .familial
-      { 
-        display: flex;
-        flex-direction: row;
-        grid-column: 3;
-        border: 2px solid#DEEBFF ; 
-        height: 35px; 
-        width: 120px; 
-        border-radius: 20px;
-        padding-right: 10px;
-        justify-content: start;
-        margin-top: 15px;
-        justify-items: start;
-        gap: 3px;
-     
-    }
-      
-      
-     
-      .romantique
-      {  
-        display: flex;
-        flex-direction: row;
-        grid-column: 4;
-        border: 2px solid#DEEBFF ; 
-        height: 35px; 
-        width: 150px; 
-        border-radius: 20px;
-        padding-right: 10px;
-        justify-content: start;
-        margin-top: 15px;
-        justify-items: start;
-        gap: 3px;
-    
-         }
-      .animaux
-      {
-        display: flex;
-        flex-direction: row;
-        grid-column: 5;
-        border: 2px solid#DEEBFF ; 
-        height: 35px; 
-        width: 210px; 
-        border-radius: 20px;
-        padding-right: 10px;
-        justify-content: start;
-        margin-top: 15px;
-        justify-items: start;
-        gap: 3px         
-    }
+.economique
+{
+    display: flex;
+    justify-items: space-between;
+    border: 2px solid black;
+    align-items: center; 
+    border-radius: 20px;
+    text-transform: capitalize;
+    width: 150px;
+    height: 30px;
   
-  .info
-  {
-      display: flex;
-      align-items: center;
-  }
+}
+
+.familial
+{
+    display: flex;
+    justify-items: space-between;
+    border: 2px solid black;
+    align-items: center;
+    text-transform: capitalize;
+    border-radius: 20px;
+    width: 120px;
+    height: 30px;
+    
+} 
+    
+
+.romantique
+{
+    display: flex;
+    justify-items: space-between;
+    border: 2px solid black;
+    align-items: center;
+    text-transform: capitalize;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+}
+
+.animaux
+{
+    display: flex;
+    justify-items: space-between;
+    border: 2px solid black;
+    align-items: center;
+    text-transform: capitalize;
+    border-radius: 20px;
+    width: 200px;
+    height: 30px;
+} 
+.icon
+{
+
+    position: relative;
+    align-items: center;
+    color: blue;
+    margin-top: 5px;
+    border-radius: 50%;
+    line-height: 2;
+    
+   
+}  
+h3
+{
+  
+    margin-left: 20px;
+    
+}
+.info
+{
+    display: flex;
+    align-items: baseline;
+   
+}
+.info p
+{
+margin-left: 5px;
+}
+.main1
+{
+    display: flex;
+    flex-direction: column;
+}
+    
+
+  
+
+ 
     
     /* 1ere  section partie hébergement*-------------*/
+.hebmars
+{
+    display: flex;
+    margin-left: 10px;
+    width: 800px;
+    border-radius: 20px;
+    background-color: gray;
+    
+}
 
-       .Hebmars 
-       {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr; 
-            grid-template-rows: 40px 120px 120px 40px;       
-            background-color: #F2F2F2;
-            justify-content: space-around;
-            grid-column-gap: 5px;
-            grid-row-gap: 5px;
-            width: 70%;
-            height: 530px;
-            row-gap: 60px;
-            column-gap: 15px;
-            border-radius: 20px;   
-            padding-left: 10px; 
-                       
-      
-    }
-    .Hebmars img
-    {
-        object-fit: cover;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        width: 220px;
-        height: 90px;
-        margin-top: 10px;
-   
+.canebiere
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    border-radius: 20px;
+    background-color: white;
+     width: 215px;
+     height: 180px; 
+     margin-top: 10px;
     
+}
+.port
+{
+    background-color: white;
+    width: 215px;
+    height: 180px; 
+    border-radius: 20px;
+}
+.mouette
+{
+    background-color: white;
+    width: 215px;
+    height: 180px; 
+    border-radius: 20px;
+}
+.hebmars1 img
+{
+    width: 200px;
+    height: 100px;
+    margin-top: 8px;
+    margin-left: 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+  
+.hebmars h1
+{
+    margin-left: 30px;
+}
+.hebmars h2
+{
+    margin-top: 0px;
+    text-decoration: none;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    font-size: 10px;
+    
+}
+ .hebmars h4
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left:10px;
 
-        }
-    
-     .Hebmars a:hover
-
-    {
-     cursor: pointer;
-    }
-    
-    
-    .canebière
-    {
-        box-shadow: 3px 3px 3px slategrey;
-        border: 2px white solid;
-        border-radius: 20px;
-        grid-row-start: 2;
-        grid-column: 1;   
-        box-shadow: 1px slategrey;
-        width: 210px;
-        height: 155px;
-        font-size: 15px;
-        cursor: pointer;
-        text-decoration: none;
-        list-style-type: none;
-        padding-left: 10px;
-        padding-right:  10px;    
-      
-    }
+}
+.hebmars h5
+{
+    margin-left: 30px;
+}
+.stars
+{
+    display: flex;
+    align-items: baseline;
+    margin-left: 10px;
+}
 .iblue
 {
-    color: #0065FC;
-   
+    color: blue;
 }
 .igrey
 {
-    color: #F2F2F2;
-   
+    color: cornflowerblue;
 }
-    .port
-    {
-        box-shadow: 3px 3px 3px slategrey;
-        border: 2px white solid;
-        border-radius: 20px;
-        grid-row-start: 2; 
-        grid-column: 2; 
-        padding: 1px 10px; 
-        box-shadow: 2px slategrey;
-        width: 210px;
-        height: 155px;
-        font-size: 15px;
-        background-color: white;
-        cursor: pointer;
-        text-decoration: none;
-        list-style-type: none;
-        padding-left: 10px;
-        padding-right:  10px;    
-   
-
-   }
-    .mouette
-    {
-        box-shadow: 3px 3px 3px slategrey;
-        border: 2px white solid;
-        border-radius: 20px;
-        grid-row-start: 2; 
-        grid-column: 3; 
-        padding: 1px 10px; 
-        box-shadow: 2px slategrey;
-        width: 210px;
-        height: 155px;
-        font-size: 15px;
-        background-color: white;
-        cursor: pointer;
-        text-decoration: none;
-        list-style-type: none;
-        padding-left: 10px;
-        padding-right:  10px;
-        }
-        
-    .mer
-    { 
-        box-shadow: 3px 3px 3px slategrey;
-        border: 2px white solid;
-        border-radius: 20px;
-        grid-row-start: 3; 
-        grid-column: 1; 
-        padding: 1px 10px; 
-        box-shadow: 2px slategrey;
-        width: 210px;
-        height: 155px;
-        font-size: 15px;
-        background-color: white;
-        cursor: pointer;
-        text-decoration: none;
-        list-style-type: none;
-        padding-left: 10px;
-        padding-right:  10px;
-        }
-.panier
-    {
-        
-        box-shadow: 3px 3px 3px slategrey;
-        border: 2px white solid;
-        border-radius: 20px;
-        grid-row-start: 3;  
-        grid-column: 2;
-        padding: 1px 10px; 
-        box-shadow: 2px slategrey;
-        width: 210px;
-        height: 155px;
-        font-size: 15px;
-        background-color: white;
-        cursor: pointer;
-        text-decoration: none;
-        list-style-type: none;
-        padding-left: 10px;
-        padding-right:  10px;
-    }
-   
-    .amina
-    {
-        box-shadow: 3px 3px 3px slategrey;
-        border: 2px white solid;
-        border-radius: 20px;
-        grid-row-start: 3;  
-        grid-column: 3;
-        padding: 1px 10px; 
-        box-shadow: 2px slategrey;
-        width: 210px;
-        height: 155px;
-        font-size: 15px;
-        background-color: white;
-        cursor: pointer;
-        text-decoration: none;
-        list-style-type: none;
-        padding-left: 10px;
-        padding-right:  10px;
-    }
-   
-    h4
-    {
-        grid-column: 1;
-        grid-row: 4;
-       
-        
-    }
-    .photos
-    {
-        display: flex;
-        flex-direction: row;
-       
-       
-        
-    }
-   
-
-   /* aside--------------------*/
-
-    .populaires
-    {
-        display: flex;
-        flex-direction: column;
-        border-spacing: 30px;
-        border-radius: 10px;
-        width: 290px;
-        height: 530px;
-        align-items: stretch;
-        grid-row-gap: 2rem;
-        background-color: #F2F2F2;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin-left: 15px;    
-    }
-    .starb
-    {
-        color:#0065FC;
-    }
-    .starg
-    {
-        color: #F2F2F2;
-    }     
-    
-   #populaires
-   {
-       display: flex;
-       flex-direction: row;
-       align-items: center;
-       justify-content: space-between;
-     
-        }
-  
-    .soleil 
-    {
-    box-shadow: 3px 3px 3px slategrey;
-    border: 3px white solid;
-    border-radius: 20px;
-    padding-left: 0px;
-    padding-top: 2px;  
+.hebmars1
+{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    width: 800px;
+    height: 200px;        
+}
+.hebmars2
+{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    width: 800px;
+    height: 200px;  
+}
+.hebmars2 img
+{
+    width: 200px;
     height: 100px;
-    width: 260px;
-    margin-bottom: 10px;
-   
-  
-    }
-     .soleil img
-        {
-            float: left;
-            object-fit:cover;
-            height: 100px;
-            width: 130px; 
-            border-radius: 20px;           
-        }
-       
-      .coeur  
-      {
-        box-shadow: 3px 3px 3px slategrey;
-        border: 3px white solid;
-        border-radius: 20px; 
-        height: 100px;
-        width: 260px;
-        margin-top: 60px;
-         padding: 2px 10px 0px 2px;
-        
-        }
-        
-        .coeur img
-        {
-            float: left;
-            object-fit:cover;
-            height: 100px;
-            width: 130px;  
-            border-radius: 20px; 
-            margin-left: 0px;
-              
-        }
-        
-       .bleu
-       {
-        box-shadow: 3px 3px 3px slategrey;
-        border: 3px white solid;
-        border-radius: 20px;
-        height: 100px;
-        width:260px;
-        margin-top: 60px;
-        padding: 2px 10px 0px 2px;  
-      
-    }
-            
-      .bleu img
-      {
-        float: left;
-        object-fit:cover;
-        height: 100px;
-        width: 130px;
-        border-radius: 20px;
-       
-      
-    }
-   
-      
-   /* 2e partie  section activités flex GRID---------*/
-   
-   .activités 
-   {
-       display:grid;
-       grid-template-columns: 1fr 1fr 1fr 1fr;
-       grid-template-rows:  20px 170px 170px;
-       row-gap: 15px;
-        column-gap: 10px;
-        height: 350px;
-        grid-row: 2;
-        grid-row-gap: 30px;
-        padding: 10px 0px 10px 10px;
-        margin-top: 3px;
-     
-
-      
-     }
-     .activités figcaption  
-     {
-         padding-left: 15px;
-     }  
-   .titres  
-   {
-       grid-row: 1;
-       grid-row-gap: 2rem;
-       padding-left: 20px;
-       padding-bottom: 20px;
-      
-   }
-.activités img
-{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    row-gap: 10px;
-    
+    margin-top: 8px;
+    margin-left: 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     object-fit: cover;
+   
 }
-  .vieuxport
-     
-  {
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
-      grid-column-start: 1;
-      grid-row: span 2;
-      grid-row-start: 2;
-      grid-row-gap: 2rem;
-      align-items: center;
-      justify-content: center;
-  
-    
-         
-      }
-      .vieuxport img
-      {
-        width: 250px;
-        height: 330px; 
-
-      }
-.calanques
+.mer
 {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    grid-column-start: 3;
-    grid-row-start: 2;  
+    background-color: white;
+    width: 215px;
+    height: 180px; 
     border-radius: 20px;
-    padding-left: 15px;  
-  
 }
-.calanques img
+.panier
 {
-    width: 250px;
-    height: 330px; 
-
-}
-.frioul
-{
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    grid-column-start: 2;
-    border-radius: 20px; 
-    grid-row: 3;  
-}
-.frioul img
-{
-    height: 130px;
-     width: 320px;
-}
-.pomegues
-{
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    background-color: white;
+    width: 215px;
+    height: 180px; 
     border-radius: 20px;
-    grid-column: 2;
-    grid-row: 2; 
+}
+.Amina
+{
+    background-color: white;
+    width: 215px;
+    height: 180px; 
+    border-radius: 20px;
+}
+  
+   
+       
+/*populaires aside flex----------------------------------*/
+.populaires
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:grey;
+    width: 400px;
+    height: 500px;
+    margin-left: 50px;
+    border-radius: 20px;
     
 }
-.pomegues img
+
+.pop 
+{
+    display: flex;
+    flex-direction:row;
+    background-color: grey;
+    width: 380px;
+    height: 70px;
+    align-items: baseline;
+    justify-content: space-between;
+   
+    
+    
+}
+.pop h1
+{
+    margin-left: 25px;
+}
+.descriptif
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+   
+}
+.descriptif img
+{
+    width: 130px;
+    height: 100px;
+    object-fit: cover;
+    margin-left: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius:20px;
+    
+}
+.fig
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 125px;
+    height: 100px;
+   
+    border-bottom-right-radius:20px ;
+    border-top-right-radius:20px;
+
+}
+.stars1
+{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.fig h2
+{
+    font-size: 10px;
+}
+.fig h4
+{
+    margin-top: 5px;
+}
+.soleil
+{
+    display: flex;
+    flex-direction: row;
+    width: 265px;
+    height: 105px;
+    border-radius: 20px;
+    margin-top: 20px;
+   
+}
+
+.coeur
+{
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.bleu
+{
+    display: flex;
+    flex-direction: row;
+    Width: 350px;
+    height: 100px;
+    margin-top: 30px;
+}
+ 
+
+   /* activités--------------------------------------*/ 
+.activites
+{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color: gray;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.vieuxport img
+{
+ width: 200px;
+ height: 300px;
+ object-fit:cover;
+  margin-left: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.vieuxport figcaption
+{
+    margin-left: 20px;
+}
+.calanques  img
+{
+   width:250px;
+   height:300px; 
+   object-fit: cover; 
+   margin-top: 60px; 
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+}
+.Pomegues  img
 {
     height:130px;
-     width: 320px;
-}
-.dame
+    width:320px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}   
+.frioul img
 {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    grid-column-start: 4;
-    grid-row-start: 2;
-    border-radius: 20px;    
+    height:130px;
+    width:320px;
+    object-fit: cover;
+    margin-top: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .dame img
 {
     height:130px;
-     width: 320px;
-}
-.longchamps
-{
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    grid-column-start: 4;
-    grid-row-start: 3;
-    border-radius: 20px;
+    width:320px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .longchamps img
 {
     height:130px;
-    width: 320px;
-}
-.photos
-{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-row-gap: 2rem;
-}
+    width:320px;
+    object-fit: cover;
+    margin-top: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+ 
+} 
 
-.container
+.titres
 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 3rem;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-    height: 800px;
-    padding-bottom: 20px;
-    margin-bottom: 20px; 
+    display: flex;
+    flex-direction: column;
 }
-
+.colonne2
+{
+    display: flex;
+    flex-direction: column;
+    margin-top:60px;
+}
+.colonne4
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-right: 20px;
+}
 
 /* footer liste-------------------------------*/
 .footer
 {
 display: flex;
 align-content: flex-start;
-padding: 10px -10px 10px 10px;
 justify-content: space-between;
-padding-right: 320px;
-padding-left: 0px;
-margin-top: 250px;
+margin-top: 20px;
 background-color:#F2F2F2 ;
-
 }
+
 .footer h4
 {
     font-weight: bold;
     line-height: 2px;
 }
-#footer1
+li
 {
-    margin: left 0;
+  
     text-align: start; 
+    list-style-type: none;
 }
+
