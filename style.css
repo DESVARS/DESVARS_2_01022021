@@ -6,12 +6,14 @@ src: url(raleway\raleway);
 .pagereservia
 {
    
-    margin: auto;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 .main
 {
     display:flex;
     justify-content: space-between;
+    
 }
 .logo img
 {
@@ -23,23 +25,29 @@ src: url(raleway\raleway);
     display: flex;
     justify-content:row reverse;
 }
-.navbar a:visited
+a:visited
  {
-    background-color: black;
-    color: #0065FC;
-    cursor: pointer;
-    text-decoration: none;       
+   color: rgb(114, 30, 210);
+  
+      
+}
+nav li a:hover
+{
+ color: black;
+ text-decoration: none;
 }
 .navbar ul
 {
     display: flex;
     list-style-type: none;
+  
 }
 
 .navbar li
 {
     margin-right: 15px;
-    list-style-type: none;    
+    list-style-type: none; 
+   
 }
 .titres1
 {
@@ -57,15 +65,71 @@ h2
     margin-top: 0px;
     margin-bottom: 10px;
 }
+#search
+{
+ 
+    border-bottom-right-radius:20px;
+    border-top-right-radius: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: blue;
+ 
+}
+.ville
+{
+    height: 40px;
+    width: 150px;
+    align-items: center;
+    box-sizing: border-box;
+}
+form
+{
+    height: 30px;
 
-.search
+}
+.rechercher
 {
     display:flex;
     margin-bottom: 10px;
-    margin-top: 20px;    
+    margin-top: 20px;
+    align-items: center;
+    height: 40px;
+    
 }
 
+.rechercher i
+{
+   
+    border: 1em solid #F2F2F2;
+    background-color: #F2F2F2;
+    border-radius: 50px 50px;
+    font-size: 20px;
+    margin-right: 0px;
 
+}
+
+.info i
+{
+    
+   color: #0065FC;
+    margin: auto;
+    align-items:center ;
+    border: 1em solid #F2F2F2;
+    background-color: #F2F2F2;
+    border-radius: 50px 50px;
+    font-size: 10px;
+    
+}
+.info
+{
+    display: flex;
+    align-items: center;  
+   
+}
+.info p
+{
+margin-left: 10px;
+}
 
   /* Partie filtres flex-----------------*/
 .containerfiltres
@@ -73,35 +137,43 @@ h2
     display: flex;
     justify-content: space-between;
     align-items:center;
-    margin-right: 500px;
+    width: 800px;
     margin-left: 0px;
     margin-bottom: 20px;
+   
 }
 
 .economique
 {
     display: flex;
     justify-items: space-between;
-    border: 2px solid black;
-    align-items: center; 
+    align-items:center;
     border-radius: 20px;
     text-transform: capitalize;
+    height: 35px;
     width: 150px;
-    height: 30px;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-right: 10px;
+    border-top: #F2F2F2 2px solid;
+    border-bottom: #F2F2F2 2px solid;
   
+
 }
 
 .familial
 {
     display: flex;
     justify-items: space-between;
-    border: 2px solid black;
     align-items: center;
     text-transform: capitalize;
     border-radius: 20px;
     width: 120px;
-    height: 30px;
-    
+    height: 35px;
+    font-size: 12px; 
+    margin-right: 20px;
+    border-top: #F2F2F2 2px solid;
+    border-bottom: #F2F2F2 2px solid;
 } 
     
 
@@ -109,72 +181,83 @@ h2
 {
     display: flex;
     justify-items: space-between;
-    border: 2px solid black;
     align-items: center;
     text-transform: capitalize;
     border-radius: 20px;
     width: 150px;
-    height: 30px;
+    height: 35px;
+    font-size: 12px;
+    margin-right: 10px;
+    border-top: #F2F2F2 2px solid;
+    border-bottom: #F2F2F2 2px solid
 }
 
 .animaux
 {
     display: flex;
     justify-items: space-between;
-    border: 2px solid black;
     align-items: center;
     text-transform: capitalize;
     border-radius: 20px;
     width: 200px;
-    height: 30px;
+    height: 35px;
+    font-size: 12px;
+    border-top: #F2F2F2 2px solid;
+    border-bottom: #F2F2F2 2px solid
 } 
 .icon
 {
 
-    position: relative;
+  
     align-items: center;
-    color: blue;
+    size: 3px;
     margin-top: 5px;
     border-radius: 50%;
     line-height: 2;
+    color:#0065FC ;
+    background-color: #DEEBFF; 
     
    
+}
+.icon i
+{
+border: 1em solid #DEEBFF;
+border-radius: 50px;
+
+
 }  
-h3
+.filtres h3
 {
   
     margin-left: 20px;
-    
+    text-transform: capitalize;
 }
-.info
-{
-    display: flex;
-    align-items: baseline;
-   
-}
-.info p
-{
-margin-left: 5px;
-}
+
+
+
 .main1
 {
     display: flex;
     flex-direction: column;
 }
-    
 
-  
-
- 
     
     /* 1ere  section partie hébergement*-------------*/
-.hebmars
+
+    .container
+    {
+        display: flex;
+      margin-left: 10px;
+      
+    }
+    .hebmars
 {
     display: flex;
-    margin-left: 10px;
-    width: 800px;
+    margin-left: 20px;
+    width: 820px;
     border-radius: 20px;
-    background-color: gray;
+    background-color: #F2F2F2;
+    margin-right: 10px;
     
 }
 
@@ -249,11 +332,11 @@ margin-left: 5px;
 }
 .iblue
 {
-    color: blue;
+    color: #0065FC;
 }
 .igrey
 {
-    color: cornflowerblue;
+    color: silver;
 }
 .hebmars1
 {
@@ -312,11 +395,13 @@ margin-left: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:grey;
+    background-color: #F2F2F2;
     width: 400px;
     height: 500px;
     margin-left: 50px;
+    border: 1px solid #F2F2F2;
     border-radius: 20px;
+    
     
 }
 
@@ -324,8 +409,8 @@ margin-left: 5px;
 {
     display: flex;
     flex-direction:row;
-    background-color: grey;
-    width: 380px;
+    background-color: #F2F2F2;
+    width: 370px;
     height: 70px;
     align-items: baseline;
     justify-content: space-between;
@@ -335,19 +420,25 @@ margin-left: 5px;
 }
 .pop h1
 {
-    margin-left: 25px;
+    margin-left: 50px;
+    
+ 
+}
+.pop i{
+    margin-right: 50px;
 }
 .descriptif
 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 50px;
     
    
 }
 .descriptif img
 {
-    width: 130px;
+    width: 140px;
     height: 100px;
     object-fit: cover;
     margin-left: 5px;
@@ -360,7 +451,7 @@ margin-left: 5px;
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 125px;
+    width: 150px;
     height: 100px;
    
     border-bottom-right-radius:20px ;
@@ -369,7 +460,7 @@ margin-left: 5px;
 }
 .stars1
 {
-    margin-top: 10px;
+    margin-top: 30px;
     margin-left: 10px;
 }
 .fig h2
@@ -384,7 +475,7 @@ margin-left: 5px;
 {
     display: flex;
     flex-direction: row;
-    width: 265px;
+    width: 350px;
     height: 105px;
     border-radius: 20px;
     margin-top: 20px;
@@ -414,13 +505,11 @@ margin-left: 5px;
 .activites
 {
     display: flex;
-    width: 100%;
-    height: 400px;
-    background-color: gray;
+    background-color:#F2F2F2;
     justify-content: space-between;
-    border-radius: 20px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
+
 .vieuxport img
 {
  width: 200px;
@@ -436,7 +525,7 @@ margin-left: 5px;
 }
 .calanques  img
 {
-   width:250px;
+   width:200px;
    height:300px; 
    object-fit: cover; 
    margin-top: 60px; 
@@ -446,7 +535,7 @@ margin-left: 5px;
 .Pomegues  img
 {
     height:130px;
-    width:320px;
+    width:250px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -455,7 +544,7 @@ margin-left: 5px;
 .frioul img
 {
     height:130px;
-    width:320px;
+    width:250px;
     object-fit: cover;
     margin-top: 10px;
     border-top-left-radius: 20px;
@@ -464,7 +553,7 @@ margin-left: 5px;
 .dame img
 {
     height:130px;
-    width:320px;
+    width:250px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -472,7 +561,7 @@ margin-left: 5px;
 .longchamps img
 {
     height:130px;
-    width:320px;
+    width:250px;
     object-fit: cover;
     margin-top: 10px;
     border-top-left-radius: 20px;
@@ -508,7 +597,14 @@ justify-content: space-between;
 margin-top: 20px;
 background-color:#F2F2F2 ;
 }
-
+.footer2
+{
+    margin-right: 100px; 
+}
+.footer3
+{
+    margin-right: 400px;
+}
 .footer h4
 {
     font-weight: bold;
@@ -519,5 +615,6 @@ li
   
     text-align: start; 
     list-style-type: none;
+  
 }
 
