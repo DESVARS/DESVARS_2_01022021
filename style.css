@@ -6,8 +6,8 @@ src: url(raleway\raleway);
 .pagereservia
 {
    
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 .main
 {
@@ -25,29 +25,33 @@ src: url(raleway\raleway);
     display: flex;
     justify-content:row reverse;
 }
-a:visited
+.navbar a
  {
-   color: rgb(114, 30, 210);
-  
-      
+    text-decoration: none;
+    
 }
-nav li a:hover
+nav li a
 {
- color: black;
+
  text-decoration: none;
+}
+
+.a:visited
+{
+    color:blue;
+    
 }
 .navbar ul
 {
     display: flex;
-    list-style-type: none;
+    list-style-type: none;    
   
 }
 
 .navbar li
 {
     margin-right: 15px;
-    list-style-type: none; 
-   
+  
 }
 .titres1
 {
@@ -59,32 +63,38 @@ h1
     font-size: 20px;
     margin-bottom: 0px;
 }
-h2
+.titres1 h2
 {
-    font-size: 15px;
+    font-size: 12px;
     margin-top: 0px;
     margin-bottom: 10px;
+    font-weight: normal;
+
 }
 #search
 {
  
-    border-bottom-right-radius:20px;
-    border-top-right-radius: 20px;
-    width: 100px;
-    height: 40px;
-    background-color: blue;
+    border-bottom-right-radius:10px;
+    border-top-right-radius: 10px;
+    width: 150px;
+    height: 35px;
+    background-color: #0065FC ;
+    color: #DEEBFF;
+    font-size: 16px;
+   
+      
  
 }
 .ville
 {
-    height: 40px;
-    width: 150px;
+    height: 30px;
+    width: 200px;
     align-items: center;
-    box-sizing: border-box;
+    margin-left: 15px;      
 }
 form
 {
-    height: 30px;
+    height: 30px;   
 
 }
 .rechercher
@@ -93,42 +103,46 @@ form
     margin-bottom: 10px;
     margin-top: 20px;
     align-items: center;
-    height: 40px;
-    
+    height: 35px;
+    background-color: #DEEBFF;
+    width: 35px;
+    border-radius: 50px;
+ 
+   
 }
 
 .rechercher i
 {
-   
-    border: 1em solid #F2F2F2;
-    background-color: #F2F2F2;
-    border-radius: 50px 50px;
-    font-size: 20px;
-    margin-right: 0px;
-
+    margin-left: 10px;
 }
 
 .info i
 {
     
    color: #0065FC;
-    margin: auto;
-    align-items:center ;
-    border: 1em solid #F2F2F2;
-    background-color: #F2F2F2;
-    border-radius: 50px 50px;
-    font-size: 10px;
-    
+  margin-left: 8px;
+  font-size: 11px;
+  margin-bottom: 8px;
+ 
+   
 }
 .info
 {
     display: flex;
-    align-items: center;  
+    align-items: center;
+    background-color: #F2F2F2;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    border-left: 20px;
+     
    
 }
 .info p
 {
 margin-left: 10px;
+width: 400px;
+
 }
 
   /* Partie filtres flex-----------------*/
@@ -138,8 +152,8 @@ margin-left: 10px;
     justify-content: space-between;
     align-items:center;
     width: 800px;
-    margin-left: 0px;
     margin-bottom: 20px;
+  
    
 }
 
@@ -157,8 +171,11 @@ margin-left: 10px;
     margin-right: 10px;
     border-top: #F2F2F2 2px solid;
     border-bottom: #F2F2F2 2px solid;
-  
-
+    box-shadow: slategrey 1px;
+}
+.economique h3
+{
+    margin-left: 10px;
 }
 
 .familial
@@ -176,6 +193,10 @@ margin-left: 10px;
     border-bottom: #F2F2F2 2px solid;
 } 
     
+.familial h3
+{
+    margin-left: 10px;
+}
 
 .romantique
 {
@@ -191,7 +212,10 @@ margin-left: 10px;
     border-top: #F2F2F2 2px solid;
     border-bottom: #F2F2F2 2px solid
 }
-
+.romantique h3
+{
+    margin-left: 10px;
+}
 .animaux
 {
     display: flex;
@@ -205,32 +229,40 @@ margin-left: 10px;
     border-top: #F2F2F2 2px solid;
     border-bottom: #F2F2F2 2px solid
 } 
+.animaux h3
+{
+    margin-left: 10px;
+}
 .icon
 {
 
   
     align-items: center;
-    size: 3px;
     margin-top: 5px;
-    border-radius: 50%;
-    line-height: 2;
-    color:#0065FC ;
+    border-radius: 50px;
     background-color: #DEEBFF; 
-    
+    height: 36px;
+    width: 36px;
+    font-size: 13px;
+   
    
 }
 .icon i
 {
-border: 1em solid #DEEBFF;
-border-radius: 50px;
+
+color: #0065FC;
+margin-top: 10px;
+margin-left:12px;
+
 
 
 }  
 .filtres h3
 {
   
-    margin-left: 20px;
+ 
     text-transform: capitalize;
+  
 }
 
 
@@ -247,17 +279,19 @@ border-radius: 50px;
     .container
     {
         display: flex;
-      margin-left: 10px;
-      
+  
+      margin-top: 30px;
     }
     .hebmars
 {
     display: flex;
-    margin-left: 20px;
-    width: 820px;
+    margin-left: 10px;
+    width: 850px;
     border-radius: 20px;
-    background-color: #F2F2F2;
-    margin-right: 10px;
+   background-color: #F2F2F2;
+    justify-content: space-between;
+    
+   
     
 }
 
@@ -265,31 +299,33 @@ border-radius: 50px;
 {
     display: flex;
     flex-direction: column;
-    margin-left: 5px;
+  
     border-radius: 20px;
-    background-color: white;
-     width: 215px;
-     height: 180px; 
-     margin-top: 10px;
+   
+     width: 240px;
+     height: 160px; 
+     
     
 }
 .port
 {
     background-color: white;
-    width: 215px;
-    height: 180px; 
+    width: 240px;
+    height: 160px; 
     border-radius: 20px;
+    margin-left: 10px;
 }
 .mouette
 {
     background-color: white;
-    width: 215px;
-    height: 180px; 
+    width: 240px;
+    height: 160px; 
     border-radius: 20px;
+    margin-left: 10px;
 }
 .hebmars1 img
 {
-    width: 200px;
+    width: 220px;
     height: 100px;
     margin-top: 8px;
     margin-left: 8px;
@@ -300,7 +336,8 @@ border-radius: 50px;
   
 .hebmars h1
 {
-    margin-left: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 .hebmars h2
 {
@@ -322,7 +359,8 @@ border-radius: 50px;
 }
 .hebmars h5
 {
-    margin-left: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 .stars
 {
@@ -341,22 +379,26 @@ border-radius: 50px;
 .hebmars1
 {
     display: flex;
-    align-items: baseline;
-    justify-content: space-around;
+  
+    justify-content: space-between;
     width: 800px;
-    height: 200px;        
+    height: 200px; 
+    margin-left: 20px;
 }
 .hebmars2
 {
     display: flex;
-    align-items: baseline;
-    justify-content: space-around;
+  
+    justify-content: space-between;
     width: 800px;
-    height: 200px;  
+    height: 180px;
+    margin-top: 10px;
+    margin-left: 20px;
+    
 }
 .hebmars2 img
 {
-    width: 200px;
+    width: 220px;
     height: 100px;
     margin-top: 8px;
     margin-left: 8px;
@@ -368,22 +410,22 @@ border-radius: 50px;
 .mer
 {
     background-color: white;
-    width: 215px;
-    height: 180px; 
+    width: 245px;
+    height: 160px; 
     border-radius: 20px;
 }
 .panier
 {
     background-color: white;
-    width: 215px;
-    height: 180px; 
+    width: 245px;
+    height: 160px; 
     border-radius: 20px;
 }
 .Amina
 {
     background-color: white;
-    width: 215px;
-    height: 180px; 
+    width: 245px;
+    height: 160px; 
     border-radius: 20px;
 }
   
@@ -395,10 +437,10 @@ border-radius: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #F2F2F2;
+    
     width: 400px;
     height: 500px;
-    margin-left: 50px;
+    margin-left: 60px;
     border: 1px solid #F2F2F2;
     border-radius: 20px;
     
@@ -410,40 +452,34 @@ border-radius: 50px;
     display: flex;
     flex-direction:row;
     background-color: #F2F2F2;
-    width: 370px;
-    height: 70px;
+    width: 350px;
+    height: 50px;
     align-items: baseline;
     justify-content: space-between;
-   
-    
-    
+    margin-left: 13px;    
 }
-.pop h1
-{
-    margin-left: 50px;
-    
- 
-}
-.pop i{
-    margin-right: 50px;
-}
+
 .descriptif
 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-left: 50px;
-    
+   background-color:#F2F2F2;
+    margin-right:30px;
+    margin-bottom: 20px;
    
 }
 .descriptif img
 {
-    width: 140px;
+    width: 120px;
     height: 100px;
     object-fit: cover;
-    margin-left: 5px;
+    margin-left: 20px;
     border-top-left-radius: 20px;
     border-bottom-left-radius:20px;
+    border: 0,2rem solid white;
+   
     
 }
 .fig
@@ -451,7 +487,7 @@ border-radius: 50px;
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 150px;
+    width: 205px;
     height: 100px;
    
     border-bottom-right-radius:20px ;
@@ -462,6 +498,7 @@ border-radius: 50px;
 {
     margin-top: 30px;
     margin-left: 10px;
+    display: flex;
 }
 .fig h2
 {
@@ -470,6 +507,8 @@ border-radius: 50px;
 .fig h4
 {
     margin-top: 5px;
+   width: 118px;
+    
 }
 .soleil
 {
@@ -488,7 +527,7 @@ border-radius: 50px;
     flex-direction: row;
     width: 350px;
     height: 100px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .bleu
@@ -497,7 +536,7 @@ border-radius: 50px;
     flex-direction: row;
     Width: 350px;
     height: 100px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
  
 
@@ -506,64 +545,118 @@ border-radius: 50px;
 {
     display: flex;
     background-color:#F2F2F2;
-    justify-content: space-between;
+   justify-content: space-around;
     margin-top: 15px;
+    
+   
+    
 }
-
+.vieuxport
+{
+    border: 1px solid#F2F2F2;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 10px;
+    box-shadow:0 0 0,2em grey;
+    box-sizing: border-box;
+   
+}
 .vieuxport img
 {
- width: 200px;
- height: 300px;
+ width: 280px;
+ height: 400px;
  object-fit:cover;
-  margin-left: 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.vieuxport figcaption
+
+.calanques
 {
-    margin-left: 20px;
+    border: 1px solid white;
+    margin-bottom: 10px;
+    border-radius: 20px;
+   margin-top: 70px;
+   background-color: white;
 }
 .calanques  img
 {
-   width:200px;
-   height:300px; 
+   width:280px;
+   height:400px; 
    object-fit: cover; 
-   margin-top: 60px; 
    border-top-left-radius: 20px;
    border-top-right-radius: 20px;
+   
+
+}
+.Pomegues
+{
+    border: 1px solid white;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 10px;
+   
 }
 .Pomegues  img
 {
-    height:130px;
-    width:250px;
+    height:160px;
+    width:290px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     
-}   
+} 
+.frioul
+{
+    border: 1px solid white;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: white;
+     margin-top: 40px; 
+}  
 .frioul img
 {
-    height:130px;
-    width:250px;
+    height:160px;
+    width:290px;
     object-fit: cover;
-    margin-top: 10px;
+   
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+.dame
+{
+    border: 1px solid white;
+    border-top: 40px;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 10px;
 }
 .dame img
 {
-    height:130px;
-    width:250px;
+    height:160px;
+    width:290px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    
+}
+.longchamps
+{
+    border: 1px solid white;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: white;
+
+    margin-top: 40px;
+   
 }
 .longchamps img
 {
-    height:130px;
-    width:250px;
+    height:160px;
+    width:290px;
     object-fit: cover;
-    margin-top: 10px;
+   
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
  
@@ -574,18 +667,28 @@ border-radius: 50px;
     display: flex;
     flex-direction: column;
 }
+.activites figcaption
+{
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 10px;
+}
 .colonne2
 {
     display: flex;
     flex-direction: column;
-    margin-top:60px;
+    margin-top: 60px;
+    justify-content: space-between;
+  
 }
 .colonne4
 {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin-top: 60px;
-    margin-right: 20px;
+   
+ 
 }
 
 /* footer liste-------------------------------*/
@@ -594,7 +697,7 @@ border-radius: 50px;
 display: flex;
 align-content: flex-start;
 justify-content: space-between;
-margin-top: 20px;
+margin-top: 100px;
 background-color:#F2F2F2 ;
 }
 .footer2
@@ -611,10 +714,15 @@ background-color:#F2F2F2 ;
     line-height: 2px;
 }
 li
-{
-  
+{ 
     text-align: start; 
     list-style-type: none;
-  
+   
+}
+li h5
+{
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
 }
 
