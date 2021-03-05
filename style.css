@@ -25,26 +25,39 @@ src: url(raleway\raleway);
     display: flex;
     justify-content:row reverse;
 }
-.navbar li a
+ a
+
 {
-    text-decoration: none;
   
+    text-decoration: none;
 }
-
-.navbar li a:hover
+a:visited
 {
-    color: black;
-    
+color:black;
 }
-
-.navbar li a:active
-{
-    color: black;
-}
-.navbar li a:visited
+a:link
 {
     color: blue;
 }
+a:focus 
+{
+    
+    
+    color:blue;
+  }
+
+a:hover
+{
+    color: black;
+   
+} 
+a:active
+{
+    color: blue;
+   
+}
+
+
 
 .navbar ul
 {
@@ -54,7 +67,6 @@ src: url(raleway\raleway);
 
 .navbar li
 {
-    text-decoration: none;
     margin-right: 15px;
 }
 
@@ -97,8 +109,14 @@ h1
     height: 30px;
     width: 200px;
     align-items: center;
-    margin-left: 15px;   
-
+    margin-left: 15px;
+    font-style: normal;
+    font-weight: bold;
+}
+::placeholder
+{
+    font-weight: bold;
+    color: black;
 }
 .rechercher
 {
