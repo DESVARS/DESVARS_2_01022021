@@ -41,8 +41,7 @@ a:link
 }
 a:focus 
 {
-    
-    
+      
     color:blue;
   }
 
@@ -56,8 +55,6 @@ a:active
     color: blue;
    
 }
-
-
 
 .navbar ul
 {
@@ -99,10 +96,7 @@ h1
     background-color: #0065FC ;
     color: #DEEBFF;
     font-size: 16px;
-    border: 1px #0065FC solid;
-   
-      
- 
+    border: 1px #0065FC solid; 
 }
 .ville
 {
@@ -139,12 +133,10 @@ h1
 .info i
 {
     
-   color: #0065FC;
+  color: #0065FC;
   margin-left: 8px;
   font-size: 11px;
-  margin-bottom: 8px;
- 
-   
+  margin-bottom: 8px;   
 }
 .info
 {
@@ -154,9 +146,7 @@ h1
     width: 20px;
     height: 20px;
     border-radius: 50px;
-    border-left: 20px;
-     
-   
+    border-left: 20px;   
 }
 .info p
 {
@@ -269,8 +259,6 @@ width: 400px;
 color: #0065FC;
 margin-top: 10px;
 margin-left:12px;
-
-
 }  
 .filtres h3
 {
@@ -289,8 +277,7 @@ margin-left:12px;
     .container
     {
         display: flex;
-        
-      margin-top: 30px;
+        margin-top: 30px;
     }
     .hebmars
 {
@@ -561,7 +548,7 @@ margin-left:12px;
     display: flex;
     flex-direction: row;
     width: 320px;
-    height: 100px;
+    height: 105px;
     margin-top: 40px;
     box-shadow: 0 0 8px 1px gray;
     border-radius: 20px;
@@ -573,7 +560,7 @@ margin-left:12px;
     display: flex;
     flex-direction: row;
     Width: 320px;
-    height: 100px;
+    height: 105px;
     margin-top: 40px;
     box-shadow: 0 0 8px 1px gray;
     border-radius: 20px;
