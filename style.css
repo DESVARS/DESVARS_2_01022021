@@ -4,16 +4,14 @@ src: url(raleway\raleway);
 }
 
 .pagereservia
-{
-   
+{ 
     margin-right: 20px;
     margin-left: 20px;
 }
 .main
 {
     display:flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;   
 }
 .logo img
 {
@@ -22,38 +20,32 @@ src: url(raleway\raleway);
 }
 .navbar
 {
-    display: flex;
-    justify-content:row reverse;
+    display: flex;   
 }
  a
-
-{
-  
+{  
     text-decoration: none;
 }
 a:visited
 {
-color:black;
+    color:black;
 }
 a:link
 {
-    color: blue;
+    color: #0065FC;
 }
 a:focus 
-{
-      
-    color:blue;
+{    
+    color:#0065FC;
   }
 
 a:hover
 {
-    color: black;
-   
+    color: black;  
 } 
 a:active
 {
-    color: blue;
-   
+    color: #0065FC;  
 }
 
 .navbar ul
@@ -67,7 +59,7 @@ a:active
     margin-right: 15px;
 }
 
-
+/* fin de header--------------------*/
 .titres1
 {
     display: flex;
@@ -96,666 +88,637 @@ h1
     background-color: #0065FC ;
     color: #DEEBFF;
     font-size: 16px;
-    border: 1px #0065FC solid; 
-}
-.ville
-{
-    height: 30px;
-    width: 200px;
-    align-items: center;
-    margin-left: 15px;
-    font-style: normal;
-    font-weight: bold;
-}
-::placeholder
-{
-    font-weight: bold;
-    color: black;
-}
-.rechercher
-{
-    display:flex;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    align-items: center;
-    height: 35px;
-    width:  35px;
-    background-color:#F2F2F2;
-    border-radius: 50px; 
-  
-}
-
-.rechercher i
-{
-    margin-left: 10px;
-}
-
-.info i
-{
+    }
     
-  color: #0065FC;
-  margin-left: 8px;
-  font-size: 11px;
-  margin-bottom: 8px;   
-}
-.info
-{
-    display: flex;
-    align-items: center;
-    background-color: #F2F2F2;
-    width: 20px;
-    height: 20px;
-    border-radius: 50px;
-    border-left: 20px;   
-}
-.info p
-{
-margin-left: 10px;
-width: 400px;
-
-}
-
-  /* Partie filtres flex-----------------*/
-.containerfiltres
-{
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    width: 800px;
-    margin-bottom: 20px;
-  
-}
-
-.economique
-{
-    display: flex;
-    justify-items: space-between;
-    align-items:center;
-    border-radius: 20px;
-    text-transform: capitalize;
-    height: 35px;
-    width: 150px;
-    font-size: 12px;
-    margin-left: 20px;
-    margin-right: 10px;
-    border-top: #F2F2F2 2px solid;
-    border-bottom: #F2F2F2 2px solid;
-    box-shadow: slategrey 1px;
-}
-.economique h3
-{
-    margin-left: 10px;
-}
-
-.familial
-{
-    display: flex;
-    justify-items: space-between;
-    align-items: center;
-    text-transform: capitalize;
-    border-radius: 20px;
-    width: 120px;
-    height: 35px;
-    font-size: 12px; 
-    margin-right: 20px;
-    border-top: #F2F2F2 2px solid;
-    border-bottom: #F2F2F2 2px solid;
-} 
+    .ville
+    {
+        height: 30px;
+        width: 200px;
+        align-items: center;
+        margin-left: 15px;
+        font-style: normal;
+        font-weight: bold;
+    }
+    ::placeholder
+    {
+        font-weight: bold;
+        color: black;
+    }
+    .rechercher
+    {
+        display:flex;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        align-items: center;
+        height: 35px;
+        width:  35px;
+        background-color:#F2F2F2;
+        border-radius: 50px;   
+    }
     
-.familial h3
-{
-    margin-left: 10px;
-}
-
-.romantique
-{
-    display: flex;
-    justify-items: space-between;
-    align-items: center;
-    text-transform: capitalize;
-    border-radius: 20px;
-    width: 150px;
-    height: 35px;
-    font-size: 12px;
-    margin-right: 10px;
-    border-top: #F2F2F2 2px solid;
-    border-bottom: #F2F2F2 2px solid
-}
-.romantique h3
-{
-    margin-left: 10px;
-}
-.animaux
-{
-    display: flex;
-    justify-items: space-between;
-    align-items: center;
-    text-transform: capitalize;
-    border-radius: 20px;
-    width: 200px;
-    height: 35px;
-    font-size: 12px;
-    border-top: #F2F2F2 2px solid;
-    border-bottom: #F2F2F2 2px solid
-} 
-.animaux h3
-{
-    margin-left: 10px;
-}
-.icon
-{
-
-    align-items: center;
-    margin-top: 5px;
-    border-radius: 50px;
-    background-color: #DEEBFF; 
-    height: 36px;
-    width: 36px;
-    font-size: 13px;  
-}
-.icon i
-{
-
-color: #0065FC;
-margin-top: 10px;
-margin-left:12px;
-}  
-.filtres h3
-{
-    text-transform: capitalize; 
-}
-
-.main1
-{
-    display: flex;
-    flex-direction: column;
-}
-
+    .rechercher i
+    {
+        margin-left: 10px;
+    }
     
-    /* 1ere  section partie hébergement*-------------*/
-
-    .container
+    .info i
+    {
+        
+      color: #0065FC;
+      margin-left: 8px;
+      font-size: 11px;
+      margin-bottom: 8px;   
+    }
+    .info
     {
         display: flex;
-        margin-top: 30px;
+        align-items: center;
+        background-color: #F2F2F2;
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        border-left: 20px;   
     }
-    .hebmars
-{
-    display: flex;
-   
-    width: 850px;
-    border-radius: 20px;
-    justify-content: space-between;
-    background-color: #F2F2F2;
-     
-    
-}
-
-.cannebiere
-{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 20px;
-     width: 235px;
-     height: 165px; 
-     box-shadow: 0 0 8px 1px gray;
-     
-    
-}
-.port
-{
-    background-color: white;
-    width: 235px;
-    height: 165px; 
-    border-radius: 20px;
+    .info p
+    {
     margin-left: 10px;
-    box-shadow: 0 0 8px 1px gray;
-}
-.mouette
-{
-    background-color: white;
-    width: 235px;
-    height: 165px; 
-    border-radius: 20px;
-    margin-left: 10px;
-    box-shadow: 0 0 8px 1px gray;
-}
-.hebmars1 img
-{
-    width: 220px;
-    height: 100px;
-    margin-top: 5px;
-    margin-left: 8px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    object-fit: cover;
-}
-  
-.hebmars h1
-{
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-.hebmars h2
-{
-    margin-top: 0px;
-    text-decoration: none;
-    margin-bottom: 0px;
-    margin-left: 10px;
-    font-size: 12px;
-    font-weight: normal;
-    
-}
- .hebmars h4
-{
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-decoration: none;
-    font-size: 15px;
-    margin-left:10px;
-
-}
-.hebmars h5
-{
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-.stars
-{
-    display: flex;
-    align-items: baseline;
-    margin-left: 10px;
-}
-.iblue
-{
-    color: #0065FC;
-    font-size: 13px;
-   
-}
-.igrey
-{
-    color: silver;
-    margin-left: 1mm;
-    font-size: 13px;
-   
-}
-.hebmars1
-{
-    display: flex;
-  
-    justify-content: space-between;
-    width: 800px;
-    height: 200px; 
-    margin-left: 20px;
-}
-.hebmars2
-{
-    display: flex;
-  
-    justify-content: space-between;
-    width: 800px;
-    height: 180px;
-    margin-top: 10px;
-    margin-left: 20px;
-    
-}
-.hebmars2 img
-{
-    width: 220px;
-    height: 100px;
-    margin-top: 5px;
-    margin-left: 8px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    object-fit: cover;
-   
-}
-.mer
-{
-    background-color: white;
-    width: 235px;
-    height: 165px; 
-    border-radius: 20px;
-    box-shadow: 0 0 8px 1px gray;
-} 
-.panier
-{
-    background-color: white;
-    width: 235px;
-    height: 165px; 
-    border-radius: 20px;
-    box-shadow: 0 0 8px 1px gray;
-}
-.Amina
-{
-    background-color: white;
-    width: 235px;
-    height: 165px; 
-    border-radius: 20px;
-    box-shadow: 0 0 8px 1px gray;
-}
-  
-   
-       
-/*populaires aside flex----------------------------------*/
-.populaires
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F2F2F2;
     width: 400px;
-    height: 500px;
-    margin-left: 60px;
-    border: 1px solid #F2F2F2;
-    border-radius: 20px;
+    }
     
+
+      /* Partie filtres -----------------*/
+    .containerfiltres
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        width: 800px;
+        margin-bottom: 20px;  
+    }
     
-}
-
-.pop 
-{
-    display: flex;
-    flex-direction:row;
-    background-color: #F2F2F2;
-    width: 320px;
-    height: 50px;
-    align-items: baseline;
-    justify-content: space-between;
-    margin-left: 10px;
-
+    .economique
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        border-radius: 20px;
+        text-transform: capitalize;
+        height: 35px;
+        width: 150px;
+        font-size: 12px;
+        margin-left: 20px;
+        margin-right: 10px;
+        border-top: #F2F2F2 2px solid;
+        border-bottom: #F2F2F2 2px solid;
+        
+    }
+    .economique h3
+    {
+      
+        margin-right: 25px;
+    }
+    
+    .familial
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: capitalize;
+        border-radius: 20px;
+        width: 120px;
+        height: 35px;
+        font-size: 12px; 
+        margin-right: 20px;
+        border-top: #F2F2F2 2px solid;
+        border-bottom: #F2F2F2 2px solid;
+    } 
+        
+    .familial h3
+    {
+        margin-right: 25px;
+    }
+    
+    .romantique
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: capitalize;
+        border-radius: 20px;
+        width: 150px;
+        height: 35px;
+        font-size: 12px;
+        margin-right: 10px;
+        border-top: #F2F2F2 2px solid;
+        border-bottom: #F2F2F2 2px solid
+    }
+    .romantique h3
+    {
+        margin-right: 25px;
+    }
+    .animaux
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: capitalize;
+        border-radius: 20px;
+        width: 200px;
+        height: 35px;
+        font-size: 12px;
+        border-top: #F2F2F2 2px solid;
+        border-bottom: #F2F2F2 2px solid
+    } 
+    .animaux h3
+    {
+        margin-right: 25px;
+    }
+    .icon
+    {
+    
+        align-items: center;
+        margin-top: 5px;
+        border-radius: 50px;
+        background-color: #DEEBFF; 
+        height: 36px;
+        width: 36px;
+        font-size: 13px;  
+    }
+    .icon i
+    {
+    color: #0065FC;
+    margin-top: 10px;
+    margin-left:12px;
+    }  
+    .filtres h3
+    {
+        text-transform: capitalize; 
+    }
+    
+    .main1
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    
+        
+        /* 1ere  section partie hébergement MARSEILLE*-------------*/
+    
+        .container
+        {
+            display: flex;
+            margin-top: 30px;
+        }
+        .hebmars
+    {
+        display: flex;
        
-}
-.pop h1
-{
-    margin-left: 0px;
-    margin-right:10px;
-}
-.descriptif
-{
+        width: 850px;
+        border-radius: 20px;
+        justify-content: space-between;
+        background-color: #F2F2F2;         
+    }
+    
+    .cannebiere
+    {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 20px;
+         width: 235px;
+         height: 165px; 
+         box-shadow: 0 0 8px 1px gray;    
+    }
+    .port
+    {
+        background-color: white;
+        width: 235px;
+        height: 165px; 
+        border-radius: 20px;
+        margin-left: 10px;
+        box-shadow: 0 0 8px 1px gray;
+    }
+    .mouette
+    {
+        background-color: white;
+        width: 235px;
+        height: 165px; 
+        border-radius: 20px;
+        margin-left: 10px;
+        box-shadow: 0 0 8px 1px gray;
+    }
+    .hebmars1 img
+    {
+        width: 220px;
+        height: 100px;
+        margin-top: 5px;
+        margin-left: 8px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        object-fit: cover;
+    }
+      
+    .hebmars h3
+    {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .hebmars h2
+    {
+        margin-top: 0px;
+        text-decoration: none;
+        margin-bottom: 0px;
+        margin-left: 10px;
+        font-size: 12px;
+        font-weight: normal;
+        
+    }
+     .hebmars h4
+    {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-decoration: none;
+        font-size: 15px;
+        margin-left:10px;
+    
+    }
+    .hebmars h5
+    {
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    .stars
+    {
+        display: flex;
+        align-items: baseline;
+        margin-left: 10px;
+    }
+    .iblue
+    {
+        color: #0065FC;
+        font-size: 13px;
+       
+    }
+    .igrey
+    {
+        color: silver;
+        margin-left: 1mm;
+        font-size: 13px;
+       
+    }
+    .hebmars1
+    {
+        display: flex;
+      
+        justify-content: space-between;
+        width: 800px;
+        height: 200px; 
+        margin-left: 20px;
+    }
+    .hebmars2
+    {
+        display: flex;
+      
+        justify-content: space-between;
+        width: 800px;
+        height: 180px;
+        margin-top: 10px;
+        margin-left: 20px;
+        
+    }
+    .hebmars2 img
+    {
+        width: 220px;
+        height: 100px;
+        margin-top: 5px;
+        margin-left: 8px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        object-fit: cover;
+       
+    }
+    .mer
+    {
+        background-color: white;
+        width: 235px;
+        height: 165px; 
+        border-radius: 20px;
+        box-shadow: 0 0 8px 1px gray;
+    } 
+    .panier
+    {
+        background-color: white;
+        width: 235px;
+        height: 165px; 
+        border-radius: 20px;
+        box-shadow: 0 0 8px 1px gray;
+    }
+    .Amina
+    {
+        background-color: white;
+        width: 235px;
+        height: 165px; 
+        border-radius: 20px;
+        box-shadow: 0 0 8px 1px gray;
+    }
+      
+       
+           
+    /*ASIDE POPULAIRES----------------------------------*/
+    .populaires
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #F2F2F2;
+        width: 400px;
+        height: 500px;
+        margin-left: 60px;
+        border-radius: 20px;    
+    }
+    .pop 
+    {
+        display: flex;
+        flex-direction:row;
+        background-color: #F2F2F2;
+        width: 320px;
+        height: 50px;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-left: 10px;       
+    }
+    .pop h3
+    {
+        margin-left: 0px;
+        margin-right:10px;
+    }
+    .descriptif
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 40px;
+        margin-right:30px;
+        margin-bottom: 20px;
+        height: 500px;   
+    }
+    .descriptif img
+    {
+        width: 110px;
+        height: 100px;
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius:20px;
+        margin-left: 5px;
+        margin-top:2px;
+        margin-bottom: 2px;   
+    }
+    .fig
+    {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 200px;
+        height: 100px;
+        border-left: 5px;
+        border-bottom-right-radius:20px ;
+        border-top-right-radius:20px;
+       
+    }
+    .stars1
+    {
+        margin-top: 20px;
+        margin-left: 10px;
+        display: flex;
+        font-size: 13px;
+      
+    }
+    .fig h2
+    {
+        font-size: 12px;
+        margin-top: 3mm;
+        font-weight: normal;
+    }
+    .fig h4
+    {
+        margin-top: 5px;
+        width: 118px;
+        
+    }
+    .soleil
+    {
+        display: flex;
+        flex-direction: row;
+        width: 320px;
+        height: 105px;
+        border-radius: 20px;
+        margin-top: 10px;
+        box-shadow: 0 0 8px 1px gray;
+        background-color: white;   
+    }
+    
+    .coeur
+    {
+        display: flex;
+        flex-direction: row;
+        width: 320px;
+        height: 105px;
+        margin-top: 40px;
+        box-shadow: 0 0 8px 1px gray;
+        border-radius: 20px;
+        background-color: white;
+    }
+    
+    .bleu
+    {
+        display: flex;
+        flex-direction: row;
+        Width: 320px;
+        height: 105px;
+        margin-top: 40px;
+        box-shadow: 0 0 8px 1px gray;
+        border-radius: 20px;
+        background-color: white;
+        margin-bottom: 10px;
+    }
+     
+    
+       /* ACTIVITES--------------------------------------*/ 
+    .activites
+    {
+        display: flex; 
+       justify-content: space-around;
+        margin-top: 15px;     
+    }
+    .activites h5
+    {
+        margin-top: 0px;
+        margin-left: 5px;   
+    }
+    .vieuxport
+    {
+        border: 1px solid white ;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        background-color: #F2F2F2;
+        margin-top: 10px;
+        box-shadow:0 0 8px 1px silver;
+        height: 420px;
+    }
+    .vieuxport img
+    {
+     width: 250px;
+     height: 380px;
+     object-fit:cover;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+    
+    .calanques
+    {
+        border: 1px solid white;
+        margin-bottom: 10px;
+        border-radius: 20px;
+       margin-top: 70px;
+       background-color: #F2F2F2;
+       box-shadow:0 0 8px 1px silver;
+       height: 420px;
+       
+    }
+    .calanques  img
+    {
+       width:250px;
+       height:380px; 
+       object-fit: cover; 
+       border-top-left-radius: 20px;
+       border-top-right-radius: 20px;
+    }
+    .Pomegues
+    {
+        border: 1px solid white;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        background-color: #F2F2F2;
+       box-shadow:0 0 8px 1px silver;    
+    }
+    .Pomegues  img
+    {
+        height:140px;
+        width:290px;
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        
+    } 
+    .frioul
+    {
+        border: 1px solid white;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        background-color:#F2F2F2;
+        box-shadow:0 0 8px 1px grey;
+        margin-bottom: 0px;
+       
+    }  
+    .frioul img
+    {
+        height:140px;
+        width:290px;
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .dame
+    {
+        border: 1px solid white;
+        border-top: 40px;
+        border-radius: 20px;
+        background-color: #F2F2F2;
+        box-shadow:0 0 8px 1px grey;
+    }
+    .dame img
+    {
+        height:140px;
+        width:290px;
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        
+    }
+    .longchamps
+    {
+        border: 1px solid white;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        background-color:#F2F2F2;
+        box-shadow:0 0 8px 1px grey;
+        margin-bottom: 0px;
+       
+    }
+    .longchamps img
+    {
+        height:140px;
+        width:290px;
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      } 
+    
+    .titres
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .colonne2
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+         margin-top: 70px;
+        height: 420px;
+    }
+    .colonne4
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 70px;
+        height: 420px;   
+    }
+    
+    /* FOOOTER liste-------------------------------*/
+    .footer
+    {
     display: flex;
-    flex-direction: column;
+    align-content: flex-start;
     justify-content: space-between;
-    margin-left: 40px;
-    margin-right:30px;
-    margin-bottom: 20px;
-    height: 500px;
-    
-   
-}
-.descriptif img
-{
-    width: 110px;
-    height: 100px;
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius:20px;
-    border: 0,2rem solid white;
-    margin-left: 5px;
-    margin-top:2px;
-    margin-bottom: 2px;
- 
-    
-}
-.fig
-{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    width: 200px;
-    height: 100px;
-    border-left: 5px;
-    border-bottom-right-radius:20px ;
-    border-top-right-radius:20px;
-   
-}
-.stars1
-{
     margin-top: 20px;
-    margin-left: 10px;
-    display: flex;
-    font-size: 13px;
-  
-}
-.fig h2
-{
-    font-size: 12px;
-    margin-top: 3mm;
-    font-weight: normal;
-}
-.fig h4
-{
-    margin-top: 5px;
-    width: 118px;
+    background-color:#F2F2F2 ;
+    }
+    .footer2
+    {
+        margin-right: 100px; 
+    }
+    .footer3
+    {
+        margin-right: 450px;
+    }
+    .footer h4
+    {
+        font-weight: bold;
+        line-height: 2px;
+    }
+    li
+    { 
+        text-align: start; 
+        list-style-type: none;
+       
+    }
+    li h5
+    {
+        font-weight: bold;
+        font-size: 15px;  
+        margin-bottom: 10px;
+    }
     
-}
-.soleil
-{
-    display: flex;
-    flex-direction: row;
-    width: 320px;
-    height: 105px;
-    border-radius: 20px;
-    margin-top: 10px;
-    box-shadow: 0 0 8px 1px gray;
-    background-color: white;
-   
-}
-
-.coeur
-{
-    display: flex;
-    flex-direction: row;
-    width: 320px;
-    height: 105px;
-    margin-top: 40px;
-    box-shadow: 0 0 8px 1px gray;
-    border-radius: 20px;
-    background-color: white;
-}
-
-.bleu
-{
-    display: flex;
-    flex-direction: row;
-    Width: 320px;
-    height: 105px;
-    margin-top: 40px;
-    box-shadow: 0 0 8px 1px gray;
-    border-radius: 20px;
-    background-color: white;
-    margin-bottom: 10px;
-}
- 
-
-   /* activités--------------------------------------*/ 
-.activites
-{
-    display: flex; 
-   justify-content: space-around;
-    margin-top: 15px;     
-}
-.activites h5
-{
-    margin-top: 0px;
-    margin-left: 5px;
-    
-   
-}
-.vieuxport
-{
-    border: 1px solid white ;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    background-color: #F2F2F2;
-    margin-top: 10px;
-    box-shadow:0 0 8px 1px silver;
-    height: 420px;
-}
-.vieuxport img
-{
- width: 250px;
- height: 380px;
- object-fit:cover;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
-.calanques
-{
-    border: 1px solid white;
-    margin-bottom: 10px;
-    border-radius: 20px;
-   margin-top: 70px;
-   background-color: white;
-   box-shadow:0 0 8px 1px silver;
-   height: 420px;
-   
-}
-.calanques  img
-{
-   width:250px;
-   height:380px; 
-   object-fit: cover; 
-   border-top-left-radius: 20px;
-   border-top-right-radius: 20px;
-   
-
-}
-.Pomegues
-{
-    border: 1px solid white;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    background-color: white;
-   
-    box-shadow:0 0 8px 1px silver;
-   
-    
-   
-}
-.Pomegues  img
-{
-    height:140px;
-    width:290px;
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    
-} 
-.frioul
-{
-    border: 1px solid white;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow:0 0 8px 1px grey;
-    margin-bottom: 0px;
-   
-}  
-.frioul img
-{
-    height:140px;
-    width:290px;
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-.dame
-{
-    border: 1px solid white;
-    border-top: 40px;
-    border-radius: 20px;
-    background-color: white;
-    
-    box-shadow:0 0 8px 1px grey;
-}
-.dame img
-{
-    height:140px;
-    width:290px;
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    
-}
-.longchamps
-{
-    border: 1px solid white;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow:0 0 8px 1px grey;
-    margin-bottom: 0px;
-   
-}
-.longchamps img
-{
-    height:140px;
-    width:290px;
-    object-fit: cover;
-   
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
- 
-} 
-
-.titres
-{
-    display: flex;
-    flex-direction: column;
-}
-
-.colonne2
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-     margin-top: 70px;
-    height: 420px;
-}
-.colonne4
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 70px;
-    height: 420px;   
-}
-
-/* footer liste-------------------------------*/
-.footer
-{
-display: flex;
-align-content: flex-start;
-justify-content: space-between;
-margin-top: 10px;
-background-color:#F2F2F2 ;
-}
-.footer2
-{
-    margin-right: 100px; 
-}
-.footer3
-{
-    margin-right: 450px;
-}
-.footer h4
-{
-    font-weight: bold;
-    line-height: 2px;
-}
-li
-{ 
-    text-align: start; 
-    list-style-type: none;
-   
-}
-li h5
-{
-    font-weight: bold;
-    font-size: 15px;
-    margin-bottom: 10px;
-}
-
