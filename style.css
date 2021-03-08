@@ -88,11 +88,12 @@ h1
     background-color: #0065FC ;
     color: #DEEBFF;
     font-size: 16px;
+    border-style:hidden ;
     }
     
     .ville
     {
-        height: 30px;
+        height: 28px;
         width: 200px;
         align-items: center;
         margin-left: 15px;
@@ -113,7 +114,8 @@ h1
         height: 35px;
         width:  35px;
         background-color:#F2F2F2;
-        border-radius: 50px;   
+        border-radius: 50px; 
+       
     }
     
     .rechercher i
@@ -170,14 +172,18 @@ h1
         margin-right: 10px;
         border-top: #F2F2F2 2px solid;
         border-bottom: #F2F2F2 2px solid;
+        cursor: pointer;
         
     }
     .economique h3
     {
-      
+       font-size: 15px;
         margin-right: 25px;
     }
-    
+    .economique h3:hover
+    {
+        color: #0065FC;
+    }
     .familial
     {
         display: flex;
@@ -191,13 +197,19 @@ h1
         margin-right: 20px;
         border-top: #F2F2F2 2px solid;
         border-bottom: #F2F2F2 2px solid;
+        cursor: pointer;
+
     } 
         
     .familial h3
     {
         margin-right: 25px;
     }
-    
+    .familial h3:hover
+    {
+  
+        color: #0065FC;
+    }
     .romantique
     {
         display: flex;
@@ -210,11 +222,18 @@ h1
         font-size: 12px;
         margin-right: 10px;
         border-top: #F2F2F2 2px solid;
-        border-bottom: #F2F2F2 2px solid
+        border-bottom: #F2F2F2 2px solid;
+        cursor: pointer;
+
     }
     .romantique h3
     {
         margin-right: 25px;
+    }
+    .romantique h3:hover
+    {
+        
+        color: #0065FC;
     }
     .animaux
     {
@@ -227,12 +246,22 @@ h1
         height: 35px;
         font-size: 12px;
         border-top: #F2F2F2 2px solid;
-        border-bottom: #F2F2F2 2px solid
+        border-bottom: #F2F2F2 2px solid;
+        cursor:pointer;
+      
+      
     } 
     .animaux h3
     {
+      
         margin-right: 25px;
     }
+    .animaux h3:hover
+    {
+        
+        color: #0065FC;
+    }
+
     .icon
     {
     
@@ -253,6 +282,7 @@ h1
     .filtres h3
     {
         text-transform: capitalize; 
+       
     }
     
     .main1
@@ -562,7 +592,7 @@ h1
         border-radius: 20px;
         background-color: #F2F2F2;
         margin-top: 10px;
-        box-shadow:0 0 8px 1px silver;
+        box-shadow:0 0 8px 1px grey;
         height: 420px;
     }
     .vieuxport img
@@ -581,7 +611,7 @@ h1
         border-radius: 20px;
        margin-top: 70px;
        background-color: #F2F2F2;
-       box-shadow:0 0 8px 1px silver;
+       box-shadow:0 0 8px 1px grey;
        height: 420px;
        
     }
@@ -599,7 +629,7 @@ h1
         margin-bottom: 10px;
         border-radius: 20px;
         background-color: #F2F2F2;
-       box-shadow:0 0 8px 1px silver;    
+       box-shadow:0 0 8px 1px grey;    
     }
     .Pomegues  img
     {
