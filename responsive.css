@@ -25,7 +25,7 @@ margin-right: 20%;
 {
     height: auto;
     width: auto;
-    background-color: lawngreen;
+  
     margin-top: 5%;
     
 }
@@ -65,7 +65,7 @@ height: 70%;
 .populaires h4
 {
     font-size: 60%;
-    background-color: lawngreen;
+   
     margin-bottom: 0%;
     width: 80%;
 }
@@ -143,4 +143,73 @@ height: 70%;
 {
     margin-top: 0;
 }
+}
+@media screen and (max-width:375px)
+{
+    .navbar
+    {
+      font-size: medium;  
+    }
+    .ville
+    {
+        width: 30vw;
+    }
+    #search
+    {
+        width: 25vw;
+    }
+    .rechercher
+    {
+        margin-top:2vw;
+    }
+    .containerfiltres
+    {
+      margin-top: 2vw;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4vw;
+    }
+    .economique
+    {
+        width: 20vw;
+    }
+    .romantique
+    {
+        width:20vw;
+    }
+    .familial
+    {
+        width: 20vw;
+    }
+    .animaux
+    {
+        width: 50vw;
+    }
+    .icon
+    {
+        margin-bottom: 3vw;
+    }
+    .hebmars{
+        flex-direction: column;
+    }
+    .hebmars1
+    {
+        flex-direction: column;
+    }
+    .hebmars2
+    {
+        flex-direction: column;
+    }
+    .cannebiere
+    {
+        width: 0;
+    }
+    .mouette
+    {
+        width: 0;
+    }
+    .port
+    {
+        width: 0;
+    }
 }
