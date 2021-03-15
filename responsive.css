@@ -1,4 +1,8 @@
-@media screen and (max-width:1284px)
+<<<<<<< Updated upstream
+@media screen and (max-width:1024px)
+=======
+@media screen and (max-width:1290px)
+>>>>>>> Stashed changes
 
 {
   .main1
@@ -24,18 +28,11 @@ margin-right: 20%;
 {
     height: auto;
     width: auto;
-  
+    background-color: lawngreen;
     margin-top: 5%;
     
 }
-.hebmars h4
-{
-    font-size: 10px;
-}
-.hebmars h2
-{
-    font-size: 10px;
-}
+
 .cannebiere
 {
     height: 70%;
@@ -71,7 +68,7 @@ height: 70%;
 .populaires h4
 {
     font-size: 60%;
-   
+    background-color: lawngreen;
     margin-bottom: 0%;
     width: 80%;
 }
@@ -116,13 +113,37 @@ height: 70%;
 {
     display: block;
 }
+.frioul
+{
+    margin-bottom: 16%;
+}
 .longchamps
 {
-    margin-top: 4%;
+    margin-bottom: 16%;
 }
 .footer
 {
-   margin-top: 5%;
+   margin-top: 0%;
     }   
 
+}
+@media screen and (max-width:840px)
+{
+   
+.animaux
+{
+    width: 17vw;
+}
+.h1
+{
+    font-size: 120%;
+}  
+.titres1 h2
+{
+    font-size: 90%;
+}
+.footer
+{
+    margin-top: 0;
+}
 }
