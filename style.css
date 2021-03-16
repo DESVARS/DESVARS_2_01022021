@@ -302,54 +302,48 @@ h1
         }
         .hebmars
     {
-        display: flex;
-        height: 100%;
-        width: 68%;
+       display: flex;
+       background-color: #F2F2F2;
         border-radius: 20px;
         justify-content: space-between;
-        background-color: #F2F2F2; 
-      
-      
-    }
-    
-    .cannebiere
-    {
-        background-color: white;
-        width: 17vw;
-        height: 12vw; 
-        border-radius: 20px;
-        box-shadow: 0 0 8px 1px gray; 
        
+         
     }
-    .port
+    .hebmars1
     {
-        background-color: white;
-        width: 17vw;
-        height: 12vw; 
-        border-radius: 20px;
-        box-shadow: 0 0 8px 1px gray; 
-        margin-left:4vw;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2vw;
+       margin-left: 5%;
+      
+        justify-content: space-between;
     }
-    .mouette
+    .imghebmars img
     {
-        background-color: white;
-        width: 17vw;
-        height: 12vw; 
-        border-radius: 20px;
-        box-shadow: 0 0 8px 1px gray;
-        margin-left: 4vw;    
-    }
-    .hebmars1 img
-    {
-        
-        width: 16vw;
-        height: 7vw;
         margin-top: 5px;
         margin-left: 6px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         object-fit: cover;
+        width: 95%;
+        height: 60%; 
+       
     }
+   
+    
+    .imghebmars
+    {
+        display: block;
+        background-color: white;
+        gap: 3vw;
+      width: 18vw;
+      height: 13vw;
+        border-radius: 20px;
+        box-shadow: 0 0 8px 1px gray;   
+       
+    }
+    
+    
       
     .hebmars h3
     {
@@ -403,67 +397,8 @@ h1
         font-size: 13px;
        
     }
-    .hebmars1
-    {
-        display: flex;
-      
-        justify-content: space-between;
-        width: 95%;
-        height: 40%;
-     
-        margin-left: 2vw;
-    }
-    .hebmars2
-    {
-        display: flex;
-      
-        justify-content: space-between;
-        width: 95%;
-        height: 40%;
-      margin-top: 5%;
-      
-        margin-left: 2vw;
-        
-    }
-    .hebmars2 img
-    {
-        width: 16vw;
-        height: 7vw;
-        margin-top: 5px;
-        margin-left: 6px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        object-fit: cover;
-       
-    }
-    .mer
-    {
-        background-color: white;
-        width: 17vw;
-        height: 12vw; 
-        border-radius: 20px;
-        box-shadow: 0 0 8px 1px gray;
-    } 
-    .panier
-    {
-        background-color: white;
-        width: 17vw;
-        height: 12vw; 
-        border-radius: 20px;
-        box-shadow: 0 0 8px 1px gray;
-        margin-left:4vw;
-    }
-    .Amina
-    {
-        background-color: white;
-        width: 17vw;
-        height: 12vw; 
-        border-radius: 20px;
-        box-shadow: 0 0 8px 1px gray;
-        margin-left:4vw;
-
-        }
-      
+    
+    
        
            
     /*ASIDE POPULAIRES----------------------------------*/
@@ -473,9 +408,6 @@ h1
         flex-direction: column;
         align-items: center;
         background-color: #F2F2F2;
-        width: 70%;
-
-       
         border-radius: 2vw;
         margin-left: 10%; 
          
@@ -507,26 +439,32 @@ h1
         height: 100%; 
          
     }
-    .descriptif img
+    .des1 img
     {
-        width: 8vw;
-        height: 8vw;
+        width: 100%;
+        height: 95%;
         object-fit: cover;
         border-top-left-radius: 20px;
         border-bottom-left-radius:20px;
-        margin : 5% 0  0  5%;
+        margin : 0 0  0  0;
+        float: left;
+        margin: 1% 0 1% 1%;
+    }
+    .des1
+    {
+        display: flex;
+        width: 25vx;
+        height: 10vw;
+        border-radius: 20px;
+        margin-top: 10px;
+        box-shadow: 0 0 8px 1px gray;
+        background-color: white;      
+ 
     }
     .fig
     {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        width: 18vw;
-        height: 9vw;
-        border-left: 5px;
-        border-bottom-right-radius:20px ;
-        border-top-right-radius:20px;
-       
+        margin-right: 20%;
+        margin-left: 5%;
     }
     .stars1
     {
@@ -549,41 +487,9 @@ h1
         width: 9vw;
         
     }
-    .soleil
-    {
-        display: flex;
-        flex-direction: row;
-        width: 93%;
-       
-        border-radius: 20px;
-        margin-top: 10px;
-        box-shadow: 0 0 8px 1px gray;
-        background-color: white;   
-    }
+   
     
-    .coeur
-    {
-        display: flex;
-        flex-direction: row;
-        width: 93%;
-       margin-top: 3vw;
-        box-shadow: 0 0 8px 1px gray;
-        border-radius: 20px;
-        background-color: white;
-    }
     
-    .bleu
-    {
-        display: flex;
-        flex-direction: row;
-        Width: 93%;
-        margin: 3vw 0 1vw 0;
-        
-        box-shadow: 0 0 8px 1px gray;
-        border-radius: 20px;
-        background-color: white;
-        
-    }
      
     
        /* ACTIVITES--------------------------------------*/ 
