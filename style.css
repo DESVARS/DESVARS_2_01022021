@@ -3,62 +3,78 @@
 src: url(raleway\raleway); 
 }
 
-.pagereservia
-{
- margin: 0 3% 0 3%,
-}
+
 .main
 {
     display:flex;
-    justify-content: space-between; 
+    align-items: center;
+   justify-content: space-between;
+    margin: 0 2vw;
+    
    
 }
 .logo img
 {
     width: 25%;
-    height: 70%;
+    height: 60%;    
    
 }
 .navbar
 {
-    display: flex;   
+   
+    display: flex;
+    align-items: center;   
 }
+
  a
 {  
     text-decoration: none;
     font-size: large;
+    color: #0065FC;
+
+    
+    
 }
-a:visited
+ li a:visited
 {
     color:black;
+    
 }
-a:link
+li a:link
 {
     color: #0065FC;
+    border-top: 3px solid transparent; 
+    cursor: pointer;
 }
-a:focus 
+li a:focus 
 {    
     color:#0065FC;
+    border-top: 3px solid #0065FC;
+    padding-top: 1vw;
+    
+    
   }
 
-a:hover
+li a:hover
 {
     color: black;  
 } 
-a:active
+li a:active
 {
-    color: #0065FC;  
+    color: #0065FC;
+      
 }
 
-.navbar ul
+.ancre ul
 {
     display: flex;
     list-style-type: none;     
 }
 
-.navbar li
+.ancre li
 {
-  margin-right: 3vw;
+  margin: 0 2vw 0 1vw;
+ 
 }
 
 /* fin de header--------------------*/
@@ -67,6 +83,7 @@ a:active
 {
     display: flex;
     flex-direction: column;
+    margin: 0 2vw;
 }
 h1
 {
@@ -86,18 +103,19 @@ h1
  
     border-bottom-right-radius:10px;
     border-top-right-radius: 10px;
-    height: 3vw;
+    width: 5vw;
+    height: 2VW;
     background-color: #0065FC ;
     color: #DEEBFF;
-    border-style:hidden ;
+    border-style:hidden;
     }
     
     .ville
     {
-        height: 3vw;
+        height: 2vw;
         width: 14vw;
         align-items: center;
-        border:none; 
+        border:#F2F2F2 solid 1px; 
         margin-left: 10%;     
     }
   
@@ -112,17 +130,19 @@ h1
         display:flex;
         font-size: 120%;
         align-items: center;
-        height: 3vw;
-        width:  3vw;
+        height: 2vw;
+        width:  10vw;
         background-color:#F2F2F2;
         border-bottom-left-radius: 15px; 
-        border-top-left-radius:15px; 
+        border-top-left-radius:15px;
+        margin: 0 2vw;
+       
         
     }
    
     .rechercher i
     {
-        margin: 0 2vw 0 1vw;
+        margin-left: 1vw;
     }
     
     .info i
@@ -159,9 +179,9 @@ h1
         display: flex;
         justify-content: space-between;
         align-items:center;
-        width: 65%;
+        width: 50%;
        text-transform: capitalize; 
-       margin-top: 2%; 
+       margin : 1vw 2vw; 
       
     }
     
@@ -173,7 +193,7 @@ h1
         border-radius: 20px;
        margin-left: 3%;
         height: 2vw;
-        width: 12vw;
+        width: 9vw;
         border: 3px solid #F2F2F2;
         cursor: pointer;
         
@@ -194,7 +214,7 @@ h1
         justify-content: space-between;
         align-items: center;
        border-radius: 20px;
-        width: 10vw;
+        width: 7vw;
         height: 2vw;
        margin-left: 3%;
         border: 3px solid #F2F2F2;
@@ -219,7 +239,7 @@ h1
         justify-content: space-between;
         align-items: center; 
         border-radius: 20px;
-        width: 11vw;
+        width: 9vw;
         height: 2vw;
         margin-left: 3%;
         border: 3px solid #F2F2F2;
@@ -241,7 +261,7 @@ h1
         display: flex;
         align-items: center;
        border-radius: 20px;
-        width: 17vw;
+        width: 12vw;
         height: 2vw;
         margin-left: 3%;
         border: 3px solid #F2F2F2;
@@ -286,16 +306,19 @@ h1
     {
         display: flex;
         flex-direction: column;
-
-   
+        margin: 0 2vw;
+     }
+    .info
+    {
+        margin: 1vw 2vw;
     }
-    
         
         /* 1ere  section partie hébergement MARSEILLE*-------------*/
     
         .container
         {
             display: flex;
+            margin: 0 2vw;
             }
 
         .hebmars
@@ -324,7 +347,7 @@ h1
         border-top-right-radius: 20px;
         object-fit: cover;
         width: 96%;
-        height: 60%; 
+        height: 65%; 
        
     }
    
@@ -334,7 +357,7 @@ h1
         display: block;
         background-color: white;
         width: 19vw;
-        height: 14vw;
+        height: 13vw;
         border-radius: 20px;
         box-shadow: 0 0 8px 1px gray;     
     }
@@ -344,13 +367,11 @@ h1
         margin-left: 2%;
         font-size: 130%;
         
-        
     }
     .hebmars h2
     {
         
         text-decoration: none;
-    
         margin-top: 0%;
         margin-left: 10px;
        font-size: 95%;
@@ -380,6 +401,7 @@ h1
         display: flex;
         align-items: baseline;
         margin-left: 10px;
+        margin-bottom: 10%;
       
     }
     .iblue
@@ -448,22 +470,20 @@ h1
     }
     .des1 img
     {
-        width: 100%;
-        height: 90%;
+        width: 95%;
+        height: 95%;
         object-fit: cover;
         border-top-left-radius: 20px;
         border-bottom-left-radius:20px;
-        margin : 1px 0  0  1pX;
-        float: left;
-        margin: 6% 0 1% 5%;
+       margin: 2% 0 0 2%;
+       
     }
     .des1
     {
         display: flex;
-        width: 24vW;
-        height: 10vw;
+        width: 22vW;
+        height: 9vw;
         border-radius: 20px;
-       
         box-shadow: 0 0 8px 1px gray;
         background-color: white;
         margin-bottom: 8%; 
@@ -472,14 +492,13 @@ h1
     }
     .fig
     {
-        margin-right: 20%;
-        margin-left: 5%;
+       margin: 0 15% 0 2%;
         
        
     }
     .fig p
     {
-     font-size: small;
+     font-size: large;
      margin-top: 0%;
      margin-bottom: 10%;
       
@@ -488,9 +507,10 @@ h1
     .stars1
     {
        
-        margin-left: 10px;
+       
         display: flex;
-        margin : 48% 10% 0 0;
+        
+        margin : 4vw 2vw 0  0;
       
     }
     
@@ -499,6 +519,8 @@ h1
         margin-top: 5px;
         width: 9vw;
         margin-bottom: 0%;
+        font-size:larger;
+       
         
     }
    
@@ -509,6 +531,7 @@ h1
        justify-content: space-around;
         
     }
+    
     .activites h5
     {
         
@@ -524,6 +547,8 @@ h1
         margin-top: 10px;
         box-shadow:0 0 7px 1px silver;
         height: 29vw;
+        
+
     }
     .vieuxport img
     {
@@ -543,6 +568,7 @@ h1
        background-color: #F2F2F2;
        box-shadow:0 0 7px 1px silver;
        height:29vw;
+     
        
     }
     .calanques  img
@@ -559,7 +585,8 @@ h1
         margin-bottom: 10px;
         border-radius: 20px;
         background-color: #F2F2F2;
-       box-shadow:0 0 7px 1px silver;    
+       box-shadow:0 0 7px 1px silver; 
+      
     }
     .Pomegues  img
     {
@@ -577,7 +604,8 @@ h1
         border-radius: 20px;
         background-color:#F2F2F2;
         box-shadow:0 0 7px 1px silver;
-       
+        grid-row: 2;   
+      
         
        
     }  
@@ -596,6 +624,7 @@ h1
         border-radius: 20px;
         background-color: #F2F2F2;
         box-shadow:0 0 7px 1px silver;
+      
     }
     .dame img
     {
@@ -613,7 +642,7 @@ h1
         border-radius: 20px;
         background-color:#F2F2F2;
         box-shadow:0 0 7px 1px silver;
-       
+      
     }
     .longchamps img
     {
