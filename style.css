@@ -109,6 +109,10 @@ h1
     color: #DEEBFF;
     border-style:hidden;
     }
+#search1
+{
+    visibility: hidden;
+}
     
     .ville
     {

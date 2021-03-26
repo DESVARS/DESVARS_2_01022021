@@ -266,16 +266,54 @@
     }
 @media screen and (max-width:768px)
     {
+    .rechercher
+    {
+        width:10%;
+        height: 4vw;
+    }
     #search
     {
         width: 10%;
+        display: none;
+    }
+    #search1
+    {
+        visibility: visible;
+        width: 4vw;
+        height: 4vw;
+        background-color:#0065FC;
+        color:white;
+        border-radius: 20%;
+        margin-left: 0%;
+        margin-right: 0%;
+        border-style: hidden;
+    }
+    #search1 i 
+    {
+        font-size: small;
+        margin-right: 2vw;
+        margin-left: 0;
+    }
+    .ville
+    {
+     width: 18vw;
+     height: 4vw;  
+     padding-right: 1vw;   
+     padding-right: 3vw;
+     
     }
     
+    ::placeholder
+    {
+        font-size: 2vw;
+        font-style: normal;
+        padding-left: 10%;
+        padding-right: 0%;
+       
+    }
     .containerfiltres
     {
-        width: 80%;
-      
-    
+        width: 80%; 
     }
     .economique
     {
@@ -311,15 +349,30 @@
        width: 100%;
        
    }
+   .des1
+   {
+       height: 14vw;
+       width: 27vw;
+       margin-right: 1vw;
+   }
+  .des1 img 
+  {
+      margin-right: 0%;
+      margin-left: 2%;
+      width: 12vw;
+  }
    .hebmars
    {
        width: 100%;
+
        flex-wrap: wrap;
      
    }
    .imghebmars
    {
        width: 30%;
+      
+  
    }
     .hebmars h4 
     {
@@ -337,16 +390,24 @@
     }
     .hebmars h3
     {
-        font-size: smaller;
+        font-size: large;
     }
+    
     .pop h3
     {
-        font-size: smaller;
+        font-size: large;
+        margin-left: 10%;
+        margin-right: 0;
+    }
+    .pop i 
+    {
+        margin-left: 10%;
+        margin-right: 0;
     }
     .fig h4 
     {
-        font-size:x-small;
-        width: 11vw;
+        font-size: small;
+        width: 14vw;
     }
     .fig p 
     {
@@ -359,7 +420,7 @@
     }
     .titres h3 
     {
-        font-size: smaller;
+        font-size: large;
     }
     .activites h5
     {
@@ -368,7 +429,11 @@
     .colonne2
     {
         height: 200px;
-          
+      
+    }
+    .longchamps
+    {
+        margin: 10% 0 0 0;
     }
     .colonne4
     {
@@ -376,11 +441,12 @@
     }
     .frioul
     {
-        margin : 2vw 0 2vw 0;
-    }
+       margin: 5% 0 10% 0;
+
+       }
     .vieuxport
     {
-        margin-top: 4vw;
+        margin-top: 13%;
     }
     .footer
     {
@@ -477,7 +543,7 @@
      .rechercher
     {
     
-        background-color:#DEEBFF;
+        background-color:#F2F2F2;
        height: 100%;
        width: 90%;
         margin: 3vw 2vw;
@@ -500,6 +566,7 @@
         margin-left: 0%;
         margin-right: 0%;
         border-style: hidden;
+        visibility: visible;
         
 
     }
@@ -517,9 +584,8 @@
     .ville
     {
       width: 100%;
-     height: 10vw;
-        
-        
+     height: 10vw; 
+    
     }
     
     ::placeholder
@@ -573,37 +639,40 @@
     {
         font-size: 6vw;
         align-items: center;
+        margin:2vw 2vw 0 2vw;
        
     }
    .economique
    {
        grid-row: 2;
        grid-column: 1;
-       width: 100%;
+       width: 90%;
        height: 50%;
-       align-items: center;
+      
    }
+   
    .familial
    {
        grid-row: 2;
        grid-column: 2;
-       width: 80%;
+       width: 65%;
        height: 50%;
       
        margin-right: 0%;
+       margin-left: 3%;
    }
    .romantique
    {
        grid-row: 3;
        grid-column: 1;
-       width: 100%;
+       width: 90%;
        height: 50%;
    }
    .animaux
    {
        grid-row: 4;
        grid-column: 1;
-       width: 140%;
+       width: 130%;
        height: 50%;
    } 
    .info
@@ -636,13 +705,17 @@
        font-size: 6vw;
        margin: 0 2vw 0  2vw;
    }
+   .pop i 
+   {
+       font-size: 6vw;
+   }
    .descriptif
    {
        flex-direction: column;
    }
    .des1
    {
-      width: 85vw;
+      width: 90vw;
       height: 40vw;
      
    }
