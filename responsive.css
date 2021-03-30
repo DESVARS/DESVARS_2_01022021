@@ -459,7 +459,10 @@
     }
 @media screen and (max-width:425px)
     {
-     
+     body
+     {
+        margin: 0;
+     }
       header
       {
           margin: 0 3vw;
@@ -468,9 +471,9 @@
       .logo
       {
           position: absolute;
-          margin-top: 0%;
-          margin-bottom: 15%;
-          width: 120%;
+        margin-bottom: 8%;
+         margin-left: 5%;
+          width: 110%;
       }
      .navbar
      {
@@ -478,6 +481,8 @@
          flex-direction: row-reverse;
          flex-wrap: wrap;
          align-self: stretch; 
+         height: 50%;
+         width: 100%;
         
      }
     
@@ -486,38 +491,36 @@
       
         order: 2;
         width: 100%;
-        display: flex;   
-        
      }
-     .ancre ul 
-     {
-         width: 100%;
-         display: flex;
-        margin: 3vw 0vw;
-        justify-content: space-between;
-        padding-left: 5%;
-        padding-right: 5%;
+    .ancre ul 
+    {
+       
+        display: flex;
+        justify-content: center;
         
-        
-      
-        
-     }
+    }
+     
     .ancre1 
     {
         
         font-size: 6vw;
         font-weight: normal;
-        
-        
+         width: 50%;
+       
+
     }
-    .ancre2
+    .inscrire
     {
-    
-        font-size: 6vw;
-        
-        
+        font-size: 5vw;
+        order: 1;
+        font-weight:bold;
+        margin-top: 8%;
+        margin-right: 5%;
+      
     }
-        li a:link
+
+    
+        li a:hover
     {
         color: #0065FC;
         border-bottom: 3px solid transparent; 
@@ -535,14 +538,7 @@
         
         
       }
-     .inscrire
-     {
-         font-size: 6vw;
-         order: 1;
-         font-weight:bold;
-
-       
-     }
+     
      .rechercher
     {
     
@@ -699,8 +695,8 @@
    }
    .populaires
    {
-       width: 100%;
-       height: 50%;
+       width: 97%;
+       height: 50%;    
     
    }
    .pop h3
@@ -747,12 +743,6 @@
        margin-top: 6vw;
    }
 
-   .activites
-   {
-       flex-direction: column;
-       margin: 3vw 2vw;
-       width: 100%;
-   }
    .hebmars
    {
        margin: 2vw 2vw;
@@ -793,8 +783,10 @@
     }
     .activites
     {
+        flex-direction: column;
+        width: 95%;
+        margin-left: 3%;
         
-        width: 98%;
     }
     .titres h3
     {
@@ -805,31 +797,47 @@
     {
         font-weight: bold;
         font-size: 4vw;
+        
     }
     .vieuxport 
     {
-        margin-top: 0;
+        margin: 0;
+        height: 55vw;
+     
     }
     .vieuxport img 
     {
-        width: 100%;
-        height: 140%;
+        width: 100%; 
+        height: 90%; 
       
+    }
+    .vieuxport h5 
+    {
+        margin-bottom: 1vw;
+        margin-top:0;
     }
     .calanques
     {
-        margin-top: 3%;
-        height: 47vw;
+       height: 55vw;
+       margin-top: 3%;
+       margin-bottom: 2%;
+      
     }
     .calanques img 
     {
         width: 100%;
-        height: 100%; 
+        height: 90%;  
     }
+    .calanques h5
+    {
+        margin-bottom: 1vw;
+        margin-top:0;
+    }   
     .colonne2
     {
         height: 30%;
-        
+        margin-top: 3%;
+        margin-bottom: 2%;
     }
     .frioul
     {
@@ -837,13 +845,20 @@
     }
     .colonne2 img
     {
-    height: 40vw;
+    height: 55vw;
     width: 100%;
     }
    .colonne4
    {
        margin-top: 7%;
        margin-bottom: 3%;
+
+   }
+   .colonne4 h5
+   {
+    margin-bottom: 1vw;
+    margin-top:0;
+}
    }
     .dame{
         height: 55vw;
@@ -856,14 +871,14 @@
     }
     .longchamps
     {
-        height: 50vw;
+        height: 55vw;
         margin-bottom: 10%;
         margin-top: 5%;
     
     }
     .longchamps img
     {
-        height: 80%;
+        height: 87%;
         width: 100%;
     
     }
