@@ -57,7 +57,8 @@ li a:focus
 
 li a:hover
 {
-    color: black;  
+      
+    color: #0065FC;  
 } 
 li a:active
 {
