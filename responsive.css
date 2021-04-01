@@ -507,63 +507,54 @@
          display: flex;
          flex-direction: row-reverse;
          flex-wrap: wrap;
-        
+        width: 100%;
           margin: 2vw 2vw;
      }
-    
      .ancre
      {
-      
-        order: 2;
-        width: 100%;
-        background-color:green ;
+       order: 2;
+       width: 100%;
+       margin-right: 20%;  
+       
      }
     .ancre ul 
     {
+        display: flex;
+        width: 100%;  
+     }
+    a 
+    {
+        font-size: 6vw;
        
-        display: grid;
-        grid-template-columns: 50% 50%;
-        width: 100%;
-        margin: 0%;
-
-       }
-     
+      } 
     .ancre1 
     {
-        
-       
-        width: 100%;
-        font-size: 7vw;
         text-align: center;
-       
-
-    }
+        width: 50%;
+     }
     .inscrire
     {
-        font-size: 5vw;
+        
         order: 1;
         font-weight:bold;
         margin-top: 8%;
         margin-right: 5%;
-      
-    }
-
-    
-    li a:hover
+       }
+    li  a:hover
     {
         color: #0065FC;
         border-bottom: 3px solid transparent; 
         cursor: pointer;
         border-top: none;
-        
+        width: 100%;  
+        border-spacing: 1vw;   
     }
-    li a:focus 
+     li a:focus
     {    
         color:#0065FC;
-        border-bottom: 3px solid #0065FC; 
+        border-bottom: 3px solid #0065FC;
        border-top: none;
-       border-bottom-width: auto;
-        
+          
       }
      
      .rechercher
